@@ -1,0 +1,26 @@
+---
+import Header from '../components/Header.astro';
+const { pageTitle } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://assets.emblstatic.net/vf/v2.5.12/css/styles.css">
+    <!-- JS -->
+    <script src="https://assets.emblstatic.net/vf/v2.5.12/scripts/scripts.js"></script>
+
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+  </body>
+</html>

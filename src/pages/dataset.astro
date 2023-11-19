@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+// import study from "../data/S-BIAD582.json";
+import datasets from "../data/datasets.json";
+const study = datasets["S-BIAD144"];
+---
+<BaseLayout pageTitle={study.accession_id}>
+  <body>
+    <section class="vf-intro | embl-grid embl-grid--has-centered-content">
+        <div></div>
+        <div>
+            <h1 class="vf-intro__heading vf-intro__heading--has-tag">{ study.accession_id }<a href="JavaScript:Void(0);" class="vf-badge vf-badge--primary vf-badge--phases">alpha</a></h1>
+            <h2 class="vf-intro__subheading">{ study.title }</h2>
+            Released { study.release_date }<br>
+            <!-- {{ authors }} -->
+        </div>
+        <div></div>
+    </section>
+    <section  class="vf-content | embl-grid embl-grid--has-centered-content">
+        <div>
+
+        </div>
+        <div>                  
+            <figure class="vf-figure vf-figure--align vf-figure--align-centered">
+                <img class="vf-figure__image" src={ study.example_image_uri }>
+            </figure>  
+            { study.description }
+        </div>
+    </section>
+  </body>
+</html>
+</BaseLayout>

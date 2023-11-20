@@ -3,25 +3,23 @@ import { Image } from 'astro:assets';
 import bannerImage from "../assets/banner.png";
 import Navigation from './Navigation.astro';
 
-const bannerUri = "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/assets/BIA-hero.png";
+const bannerUri = "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/assets/banner.png";
 ---
 
 <header>
     <!-- <section class="vf-hero  | vf-u-fullbleed" style={ "--vf-hero--bg-image: " + bannerImage.src + ";"}> -->
   <section 
     class="vf-hero vf-hero--800 vf-hero--search | vf-u-fullbleed"
-    style={"--vf-hero--bg-image: url(" + bannerUri +")"}>
-        <div class="vf-hero__content | vf-box | vf-stack vf-stack--400">
+    style={"--vf-hero--bg-image: url(" + bannerUri +");"}>
+        <div class="vf-hero__content | vf-box | vf-stack vf-stack--400" style="opacity: 0.8;">
 
-          <!-- <img src="https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/pages/assets/BIA-Logo.png"> -->
-          <h2 class="vf-hero__heading">The BioImage Archive</h2>
+          <img src="https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/pages/assets/BIA-Logo.png" style="float:left; width:120px">
+          <h2 class="vf-hero__heading">BioImage Archive</h2>
           <p class="vf-hero__subheading">A resource for open, FAIR life science imaging data</p>
           <!-- <img src={bannerImage.src}> -->
           <!-- <Image src={bannerImage} alt="A description of my image." /> -->
           <!-- <p class="vf-hero__text">The BioImage Archive is a free, publicly available online resource which stores and distributes biological images. It accepts submissions of data from any imaging modality, as long as the data are either associated with a peer-reviewed publication, or of value beyond a single experiment.</p> -->
         </div>
     </section>
-    <nav>
-        <Navigation />
-    </nav>
+    <Navigation />
 </header>

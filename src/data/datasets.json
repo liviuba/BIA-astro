@@ -1,23 +1,122 @@
 {
-    "S-BIAD144": {
-        "accession_id": "S-BIAD144",
-        "title": "The glucosylceramide synthase inhibitor PDMP causes lyso-somal lipid accumulation and mTOR inactivation",
-        "release_date": "2021-05-31",
-        "description": "We investigated subcellular sphingolipid distribution using a functionalized sphingosine analogue (pacSph) by confocal microscopy in control, PDMP and NB-DNJ (Miglustat) treated WT and SGPL1 knock-out cells (experimentA; channel 1: pacSph, channel 2: Lamp1). We studied lysosomal sphingolipid (pacSph) export using pulse-chase experiments in control and PDMP treated SGPL1 knock-out cells (experimentB; channel 1: pacSph, channel 2: Lamp1). We analyzed other lipids such as LBPA (immunofluorescence staining) and cholesterol (filipin staining) at the lysosome in control, PDMP and NB-DNJ (Miglustat) treated WT cells by microscopy (experimentC). We investigated a timeline of lipid accumulating effects arising from PDMP treatment by confocal microscopy. Therefore, we investigated LBPA (immunofluorescence staining in WT cells; channel 1: LBPA, channel 2: Lamp1), sphingolipids (using pacSph in SGPL1 knock-out cells; channel 1: pacSph, channel 2: Lamp1) and cholesterol (filipin staining in WT cells; channel 1: Filipin, channel 2: Lamp1) (experimentD). We analysed the timeline of mTOR (channel 1: mTOR, channel 2: Lamp1) and TFEB (channel 1: DAPI, channel 2: TFEB) subcellular translocation arising from PDMP treatment in WT cells by immunofluorescence microscopy (experimentE).",
-        "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD144-example.png"
-    },
-    "S-BIAD582": {
-        "accession_id": "S-BIAD582",
-        "title": "A timer gene network is spatially regulated by the terminal system in the Drosophila embryo",
-        "description": "We present an imaging dataset used to study the regulation of the \"timer\" genes caudal (cad), Dichaete (D) and odd-paired (opa) in early Drosophila melanogaster embryos (bioRxiv doi for accompanying manuscript: 10.1101/2022.01.26.477848). The dataset consists of various multiplexed HCR and/or antibody stains showing the expression of relevant patterning genes in fixed Drosophila embryos (54 gene product combinations across 12 genotypes). In total it contains 866 multi-chanel image stacks, 818 of which show whole embryos, and 48 of which show close-up views of the posterior terminal region. We used the data to identify 11 new regulatory interactions involved in Drosophila anteroposterior patterning and to clarify the dynamics and mechanism of posterior terminal patterning.",
-        "release_date": "2022-11-01",
-        "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD582-example.png"
-    },
-    "S-BIAD453": {
-        "accession_id": "S-BIAD453",
-        "title": "The expression of cancer-testis antigens is associated with immune cell infiltration in the microenvironment of non-small cell lung cancer",
-        "description": "Patients diagnosed with non-small cell lung cancer (NSCLC) have access to immune checkpoint inhibitors which are now routinely used in medical care. However, durable benefits are only measured in a minority of patients. A tumor's antigenic landscape (tumor-associated antigens, TAAs) can be utilized for anticancer immune response, and cancer-testis antigens (CTAs) are known targets of humoral and cellular immune reactions. The current study aimed to characterize CTA expression in non-small cell lung cancer (NSCLC) in the relation to the immune microenvironment. Here, we present the raw image data for eight cancer-testis antigens (DPEP3, EZHIP, MAGEA4, MAGEB2, MAGEC2, PAGE1, PRAME, and TKTL1) that were selected for detailed immunohistochemical protein profiling in 1-millimeter tissue punch-outs from 328 NSCLC patients.",
-        "release_date": "2023-02-07",
-        "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD453/00f585ec-9ee1-4d32-8586-cc4c9178ca55/00f585ec-9ee1-4d32-8586-cc4c9178ca55-representative-512-512.png"
-    }
+  "S-BSST410": {
+    "accession_id": "S-BSST410",
+    "title": "Axis Specification in Zebrafish Is Robust to Cell Mixing and Reveals a Regulation of Pattern Formation by Morphogenesis",
+    "release_date": "2020-06-05",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BSST410-example.png"
+  },
+  "S-BSST522": {
+    "accession_id": "S-BSST522",
+    "title": "Actomyosin forces and the energetics of red blood cell invasion by the malaria parasite Plasmodium falciparum",
+    "release_date": "2020-11-01",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BSST522-example.png"
+  },
+  "S-BIAD7": {
+    "accession_id": "S-BIAD7",
+    "title": "High-throughput microscopy exposes a pharmacological window in which dual leucine zipper kinase inhibition preserves neuronal network connectivity",
+    "release_date": "2019-05-16",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD7/IM76/IM76-representative-512-512.png"
+  },
+  "S-BIAD144": {
+    "accession_id": "S-BIAD144",
+    "title": "The glucosylceramide synthase inhibitor PDMP causes lyso-somal lipid accumulation and mTOR inactivation",
+    "release_date": "2021-05-31",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD144-example.png"
+  },
+  "S-BIAD217": {
+    "accession_id": "S-BIAD217",
+    "title": "Large-scale electron microscopy database for human type 1 diabetes",
+    "release_date": "2021-10-11",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD217/IM692/IM692-representative-512-512.png"
+  },
+  "S-BIAD229": {
+    "accession_id": "S-BIAD229",
+    "title": "Arabidopsis guard cell chloroplasts import cytosolic ATP for starch turnover and stomatal opening",
+    "release_date": "2021-12-31",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD229-example.png"
+  },
+  "S-BIAD425": {
+    "accession_id": "S-BIAD425",
+    "title": "Integrating analog and digital modes of gene expression at Arabidopsis FLC",
+    "release_date": "2022-04-22",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD425-example.png"
+  },
+  "S-BIAD453": {
+    "accession_id": "S-BIAD453",
+    "title": "The expression of cancer-testis antigens is associated with immune cell infiltration in the microenvironment of non-small cell lung cancer",
+    "release_date": "2023-02-07",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD453/IM1/IM1-representative-512-512.png"
+  },
+  "S-BIAD464": {
+    "accession_id": "S-BIAD464",
+    "title": "Diffusion and bulk flow of amino acids mediate calcium waves in plants",
+    "release_date": "2022-10-22",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD464-example.png"
+  },
+  "S-BIAD501": {
+    "accession_id": "S-BIAD501",
+    "title": "Open TG-GATEs histopathology dataset ",
+    "release_date": "2022-09-22",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD501-example.png"
+  },
+  "S-BIAD515": {
+    "accession_id": "S-BIAD515",
+    "title": "RNAScope Data - Mapping the developing human immune system across organs",
+    "release_date": "2022-08-09",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD515-example.png"
+  },
+  "S-BIAD531": {
+    "accession_id": "S-BIAD531",
+    "title": "Automated staging of zebrafish embryos using machine-learning ",
+    "release_date": "2022-08-29",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD531-example.png"
+  },
+  "S-BIAD548": {
+    "accession_id": "S-BIAD548",
+    "title": "Non-invasive, in vivo fluorescence imaging in mice using SiRos1300 and SiRos1550 dye nanoemulsions ",
+    "release_date": "2022-09-12",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD548/IM1/IM1-representative-512-512.png"
+  },
+  "S-BIAD564": {
+    "accession_id": "S-BIAD564",
+    "title": "In vivo SPIM and confocal imaging of neuronal efferocytosis by microglia",
+    "release_date": "2022-11-18",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD564-example.png"
+  },
+  "S-BIAD570": {
+    "accession_id": "S-BIAD570",
+    "title": "A spatially resolved atlas of the human lung characterizes a gland-associated immune niche",
+    "release_date": "2022-10-24",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD570-example.png"
+  },
+  "S-BIAD573": {
+    "accession_id": "S-BIAD573",
+    "title": "Plasma membrane topography governs the 3D dynamic localization of IgM B cell antigen receptor clusters",
+    "release_date": "2022-12-30",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD573-example.png"
+  },
+  "S-BIAD582": {
+    "accession_id": "S-BIAD582",
+    "title": "A timer gene network is spatially regulated by the terminal system in the Drosophila embryo",
+    "release_date": "2022-11-01",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD582-example.png"
+  },
+  "S-BIAD593": {
+    "accession_id": "S-BIAD593",
+    "title": "Bioenergetics of pollen tube growth in Arabidopsis thaliana",
+    "release_date": "2022-12-20",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD593/IM5/IM5-representative-512-512.png"
+  },
+  "S-BIAD599": {
+    "accession_id": "S-BIAD599",
+    "title": "An image-based data-driven analysis of cellular architecture in a developing tissue",
+    "release_date": "2022-12-13",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD599/IM49/IM49-representative-512-512.png"
+  },
+  "S-BIAD605": {
+    "accession_id": "S-BIAD605",
+    "title": "Whole slide images and patches of clear cell renal cell carcinoma counterstained with multiple immunofluorescence for Hoechst, CD3, and CD8.",
+    "release_date": "2022-12-25",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD605-example.png"
+  }
 }

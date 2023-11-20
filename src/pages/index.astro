@@ -1,5 +1,25 @@
 ---
-import { Image } from 'astro:assets';
+import browseImage from '../assets/browse.png';
+import submitImage from '../assets/submit.png';
+import galleriesImage from '../assets/galleries.png';
+import helpImage from '../assets/help.png';
+import policiesImage from '../assets/policies.png';
+import aboutImage from '../assets/aboutus.png';
+
+import ukriImage from '../assets/uk_ri_logo.jpg';
+import emblImage from '../assets/EMBL_logo_colour_wordmark.png';
+import euImage from '../assets/EU_logo.jpg';
+
+
+const cards = [
+  { label: "Browse", description: "Explore and search for datasets", img: browseImage.src },
+  { label: "Submit", description: "Submit your data to the BIA", img: submitImage.src },
+  { label: "Galleries", description: "Visually explore our images", img: galleriesImage.src },
+  { label: "Help", description: "Find answers to your questions", img: helpImage.src },
+  { label: "Policies", description: "Learn about what you can expect from us", img: policiesImage.src },
+  { label: "About us", description: "Discover our mission and developments", img: aboutImage.src }
+]
+
 import multiImageStrip from '../assets/multi_image_strip.png';
 import MenuCard from '../components/MenuCard.astro';
 ---
@@ -87,25 +107,57 @@ import MenuCard from '../components/MenuCard.astro';
 
 
   <section 
-    class="vf-grid vf-grid__col-3 | vf-card-container | vf-u-fullbleed vf-u-background-color-ui--grey--light"
+    class="vf-grid vf-grid__col-3 | vf-card-container | vf-u-fullbleed"
     style="margin-left: 10%; margin-right: 10%;"
   >
-
-        <MenuCard label="Browse" description="Search for datasets" />
-        <MenuCard label="Submit" description="Submit your data" />
-        <MenuCard label="Galleries" description="Visually explore our images" />
-        <MenuCard label="Help" description="Find answers to your questions" />
-        <MenuCard label="Policies" description="Learn about what you can expect from us" />
-        <MenuCard label="About us" description="Discover our mission and developments" />
+        { cards.map((card) => (
+                <MenuCard label={card.label} description={card.description} icon_src={card.img}/>
+        )) }
 
   </section>
 
-  <section class="vf-grid | vf-u-fullbleed vf-u-background-color-ui--grey--light" style="margin-left: 10%; margin-right: 10%;">
+  <section class="vf-grid" style="margin-left: 10%; margin-right: 10%;">
     <figure class="vf-figure">
       <img class="vf-figure__image" src={multiImageStrip.src} alt="Biological images from different modalities." loading="lazy">
     </figure>
   </section>
 
+  <section
+    style="margin-left: 10%; margin-right: 10%;"
+  >
+  <h3 class="padding-top-large" id="funders">Funders</h3>
+
+  <p>Ongoing development is enabled by capital investment from the UKRI Strategic Priorities Fund and operational costs
+  supported by EMBL member state funding.</p>
+  </section>
+
+  <style>
+    .logo-img {border-width: 0px; }
+  </style>
+  
+    <!-- <div class="medium-9 columns"> -->
+    <section 
+      class="vf-grid | vf-grid__col-5"
+      style="margin-left: 10%; margin-right: 10%;"
+    >
+      <!-- <div class="row small-up-2 medium-up-3 large-up-4 text-center"> -->
+        <div class="column column-block">
+          <a href="https://www.ukri.org/" class="logo-img">
+            <img class="padding-bottom-large" src={ukriImage.src} alt="UKRI logo" style="height: 66px;" />
+          </a>
+        </div>
+        <div class="column column-block">
+          <a href="http://www.ebi.ac.uk" class="logo-img">
+            <img class="padding-bottom-large" src={emblImage.src} alt="EMBL logo" style="height: 66px;" />
+          </a>
+        </div>
+        <div class="column column-block">
+          <a href="http://www.ebi.ac.uk" class="logo-img">
+            <img class="padding-bottom-large" src={euImage.src} alt="EU logo" style="height: 66px;" />
+          </a>
+        </div>
+      <!-- </div> -->
+    </section>
 
   <!-- IE11 polyfill JS -->
 <script nomodule crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=default"></script>

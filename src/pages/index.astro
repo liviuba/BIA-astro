@@ -6,6 +6,11 @@ import helpImage from '../assets/help.png';
 import policiesImage from '../assets/policies.png';
 import aboutImage from '../assets/aboutus.png';
 
+import onlineTutorialImage from '../assets/online_tutorial_image.png';
+import getInTouchImage from '../assets/get_in_touch.png';
+
+import newsExampleImage from '../assets/news_example.png';
+
 import ukriImage from '../assets/uk_ri_logo.jpg';
 import emblImage from '../assets/EMBL_logo_colour_wordmark.png';
 import euImage from '../assets/EU_logo.jpg';
@@ -65,16 +70,16 @@ import MenuCard from '../components/MenuCard.astro';
     <div class="vf-hero__content | vf-box | vf-stack vf-stack--400" style="opacity: 0.9;">
       <!-- <section class="vf-grid vf-grid__col-2"> -->
         <section style="display: flex; gap: 10px;">
-        <div>
-          <img src="https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/pages/assets/BIA-Logo.png" style="width: 110px;">
-        </div>
-        <div>
-          <h2 class="vf-hero__heading">BioImage Archive</h2>
-          <p class="vf-hero__subheading">
-            A free, publicly available resource for life sciences images from any imaging modality, at any scale
-          </p>
+          <div>
+            <img src="https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/pages/assets/BIA-Logo.png" style="width: 110px;">
           </div>
-          </section>
+          <div>
+            <h2 class="vf-hero__heading">BioImage Archive</h2>
+            <p class="vf-hero__subheading">
+              A free, publicly available resource for life sciences images from any imaging modality, at any scale
+            </p>
+          </div>
+        </section>
           <div>
 
           <form action="#" class="vf-form vf-form--search vf-form--search--mini | vf-sidebar vf-sidebar--end">
@@ -116,16 +121,51 @@ import MenuCard from '../components/MenuCard.astro';
 
   </section>
 
-  <section class="vf-grid" style="margin-left: 10%; margin-right: 10%;">
+  <!-- Image strip -->
+  <section class="vf-grid" style="margin-left: 10%; margin-right: 10%; margin-bottom: 20px;">
     <figure class="vf-figure">
       <img class="vf-figure__image" src={multiImageStrip.src} alt="Biological images from different modalities." loading="lazy">
     </figure>
   </section>
 
+  <!-- News -->
+  <section class="vf-stack" style="background-color: rgb(226, 237, 239); padding-top: 10px; padding-left: 10%; padding-right: 10%;">
+    <h2>News</h2>
+    <section class="vf-grid vf-grid__col-2">
+      <div>
+        <h3>BioImage Archive democratises access to microscopy data</h3>
+        EMBL-EBI’s BioImage Archive makes it easier to access and analyse biological research data
+      </div>
+      <div>
+        <img class="vf-figure__image" src={newsExampleImage.src} alt="Example news image." loading="lazy">
+      </div>
+    </section>
+    <section class="embl-grid embl-grid--has-centered-content">
+      <div></div>
+      <div>
+        <button class="vf-button vf-button--primary" style="border-radius: 10px;">Subscribe to our mailing list</button>
+      </div>
+    </section>
+  </section>
+
+  <!-- Tutorial and get in touch -->
+  <section class="vf-grid vf-grid__col-2" style="margin-left: 10%; margin-right: 10%;">
+    <div>
+      <h2>Learn more</h2>
+      <img class="vf-figure__image" src={onlineTutorialImage.src} alt="Online tutorial">
+    </div>
+    <div>
+      <h2>Stay in touch</h2>
+      <img class="vf-figure__image" src={getInTouchImage.src} alt="Get in touch">
+    </div>
+
+  </section>
+
+  <!-- Funding -->
   <section
     style="margin-left: 10%; margin-right: 10%;"
   >
-  <h3 class="padding-top-large" id="funders">Funders</h3>
+  <h2 class="padding-top-large" id="funders">Funders</h2>
 
   <p>Ongoing development is enabled by capital investment from the UKRI Strategic Priorities Fund and operational costs
   supported by EMBL member state funding.</p>

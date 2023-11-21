@@ -1,0 +1,22 @@
+{
+  "name": "vem",
+  "title": "Volume EM OME-NGFF examples",
+  "subtitle": "A selection of EMPIAR Volume EM depositions converted to OME-NGFF",
+  "description": "This collection contains a selection of examples from different volume electron microscopy techniques converted to OME-Zarr and available for interactive exploration or download",
+  "attributes": {
+    "collection_landing_template": "collection-vem-landing.html.j2"
+  },
+  "accession_ids": [
+    "EMPIAR-10094",
+    "EMPIAR-10310",
+    "EMPIAR-10392",
+    "EMPIAR-10442",
+    "EMPIAR-10479",
+    "EMPIAR-10553",
+    "EMPIAR-10819",
+    "EMPIAR-10967",
+    "EMPIAR-10903",
+    "EMPIAR-10311",
+    "EMPIAR-11380"
+  ]
+}

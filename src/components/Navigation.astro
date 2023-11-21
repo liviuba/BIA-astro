@@ -1,11 +1,11 @@
 ---
 const pagenames = ["Home", "Browse", "Submit", "Galleries", "Help", "Policies", "About"];
 ---
-<nav class="vf-navigation vf-navigation--main | vf-cluster">
+<nav class="vf-navigation vf-navigation--main | vf-cluster" style="margin-top: 0.5rem;">
     <ul class="vf-navigation__list | vf-list | vf-cluster__inner">
       {pagenames.map((pagename) =>
         <li class="vf-navigation__item">
-            <a href="JavaScript:Void(0);" class="vf-navigation__link">{pagename}</a>
+            <a href="/" class="vf-navigation__link">{pagename}</a>
         </li>
       )}
     </ul>

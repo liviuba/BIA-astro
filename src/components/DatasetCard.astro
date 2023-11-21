@@ -11,7 +11,10 @@ const { dataset, accession_id } = Astro.props;
             </a>
         </h3>
         <p class="vf-card__text">
-        { dataset.title }
+        { dataset.title }<br><br>
+        <b>Release date: </b>{ dataset.release_date }<br>
+        <b>Imaging method: </b>{ dataset.imaging_type }<br>
+        <b>Organism: </b>{ dataset.organism }
         </p>
     </div>
 </article>

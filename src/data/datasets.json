@@ -178,5 +178,104 @@
     "imaging_type": "fluorescence microscopy",
     "organism": "Homo sapiens (human)",
     "n_images": 20
+  },
+  "EMPIAR-10094": {
+    "accession_id": "EMPIAR-10094",
+    "title": "Serial Block Face SEM of HeLa cell pellet with 10 nm pixels and 50 nm slices (benchmark dataset)",
+    "release_date": "2019-05-21",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10094/IM1/IM1-representative-512-512.png",
+    "imaging_type": "Serial Block Face SEM",
+    "organism": "Homo sapiens",
+    "n_images": 1
+  },
+  "EMPIAR-10310": {
+    "accession_id": "EMPIAR-10310",
+    "title": "FIB-SEM of parapodia from Platynereis dumerilii",
+    "release_date": "2020-02-07",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10310/IM1/IM1-representative-512-512.png",
+    "imaging_type": "FIB-SEM",
+    "organism": "Platynereis dumerilii",
+    "n_images": 1
+  },
+  "EMPIAR-10392": {
+    "accession_id": "EMPIAR-10392",
+    "title": "Three-dimensional ultrastructure of Plasmodium falciparum throughout cytokinesis",
+    "release_date": "2020-05-14",
+    "example_image_uri": "https://www.ebi.ac.uk/pdbe/emdb-empiar/entryIcons/10392-l.gif",
+    "imaging_type": "FIB-SEM",
+    "organism": "Plasmodium falciparum",
+    "n_images": 11
+  },
+  "EMPIAR-10442": {
+    "accession_id": "EMPIAR-10442",
+    "title": "170314, Five-day-old Col-0 Arabidopsis thaliana root, phloem pole unloading zone (339-381 um from the root tip)",
+    "release_date": "2020-10-23",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10442/IM1/IM1-representative-512-512.png",
+    "imaging_type": "SB EM",
+    "organism": "Arabidopsis thaliana",
+    "n_images": 1
+  },
+  "EMPIAR-10479": {
+    "accession_id": "EMPIAR-10479",
+    "title": "FIB/SEM sample dataset MCB-CLEM IV Weiner",
+    "release_date": "2020-08-06",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10479/IM1/IM1-representative-512-512.png",
+    "imaging_type": "FIB-SEM",
+    "organism": "Shigella flexneri",
+    "n_images": 1
+  },
+  "EMPIAR-10553": {
+    "accession_id": "EMPIAR-10553",
+    "title": "FIB-SEM of Gemmata obscuriglobus - a species of the Planctomycetes phylum",
+    "release_date": "2021-04-30",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10553/IM1/IM1-representative-512-512.png",
+    "imaging_type": "FIB-SEM",
+    "organism": "Gemmata obscuriglobus",
+    "n_images": 1
+  },
+  "EMPIAR-10819": {
+    "accession_id": "EMPIAR-10819",
+    "title": "Benchmark FIB SEM data of HeLa cells previously imaged by Zeiss LSM900 Airyscan microscopy",
+    "release_date": "2021-10-29",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10819/IM1/IM1-representative-512-512.png",
+    "imaging_type": "FIB-SEM",
+    "organism": "Homo sapiens",
+    "n_images": 1
+  },
+  "EMPIAR-10967": {
+    "accession_id": "EMPIAR-10967",
+    "title": "SBF SEM of Human term placental villi",
+    "release_date": "2022-03-14",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10967/IM1/IM1-representative-512-512.png",
+    "imaging_type": "FIB-SEM",
+    "organism": "Homo sapiens",
+    "n_images": 1
+  },
+  "EMPIAR-10903": {
+    "accession_id": "EMPIAR-10903",
+    "title": "A biological nano-foam: the wall of coniferous bisaccate pollen (data sets)",
+    "release_date": "2022-03-07",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10903/IM2/IM2-representative-512-512.png",
+    "imaging_type": "FIB-SEM",
+    "organism": "pine",
+    "n_images": 2
+  },
+  "EMPIAR-10311": {
+    "accession_id": "EMPIAR-10311",
+    "title": "FIB-SEM of a HeLa cell",
+    "release_date": "2020-02-07",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10311/IM1/IM1-representative-512-512.png",
+    "imaging_type": "FIB-SEM",
+    "organism": "Homo sapiens",
+    "n_images": 1
+  },
+  "EMPIAR-11380": {
+    "accession_id": "EMPIAR-11380",
+    "title": "Light and electron microscopy continuum-resolution imaging of 3D cell cultures",
+    "release_date": "2023-02-22",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-11380/5aec07ee-df5d-4ea4-ac32-fa55419464d6/5aec07ee-df5d-4ea4-ac32-fa55419464d6-representative-512-512.png",
+    "imaging_type": "FIB-SEM",
+    "organism": "Homo sapiens",
+    "n_images": 5
   }
 }

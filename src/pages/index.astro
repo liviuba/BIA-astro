@@ -17,12 +17,12 @@ import euImage from '../assets/EU_logo.jpg';
 
 
 const cards = [
-  { label: "Browse", description: "Explore and search for datasets", img: browseImage.src },
-  { label: "Submit", description: "Submit your data to the BIA", img: submitImage.src },
-  { label: "Galleries", description: "Visually explore our images", img: galleriesImage.src },
-  { label: "Help", description: "Find answers to your questions", img: helpImage.src },
-  { label: "Policies", description: "Learn about what you can expect from us", img: policiesImage.src },
-  { label: "About us", description: "Discover our mission and developments", img: aboutImage.src }
+  { label: "Browse", description: "Explore and search for datasets", img: browseImage.src, target: "submit" },
+  { label: "Submit", description: "Submit your data to the BIA", img: submitImage.src, target: "submit" },
+  { label: "Galleries", description: "Visually explore our images", img: galleriesImage.src, target: "vis" },
+  { label: "Help", description: "Find answers to your questions", img: helpImage.src, target: "submit" },
+  { label: "Policies", description: "Learn about what you can expect from us", img: policiesImage.src, target: "policies" },
+  { label: "About us", description: "Discover our mission and developments", img: aboutImage.src, target: "submit" }
 ]
 
 import multiImageStrip from '../assets/multi_image_strip.png';
@@ -116,7 +116,7 @@ import MenuCard from '../components/MenuCard.astro';
     style="margin-left: 10%; margin-right: 10%;"
   >
         { cards.map((card) => (
-                <MenuCard label={card.label} description={card.description} icon_src={card.img}/>
+                <MenuCard label={card.label} description={card.description} icon_src={card.img} target={card.target}/>
         )) }
 
   </section>

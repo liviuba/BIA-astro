@@ -3,13 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import DatasetCard from '../components/DatasetCard.astro';
 import datasets from "../data/datasets.json";
 
-const collection = {
-    title: "Visualisation",
-    subtitle: "Of good stuff",
-    description: "Presented with astro",
-};
+import collection from '../data/visualisation.json';
+
 ---
-<BaseLayout pageTitle="Vis">
+<BaseLayout pageTitle={ collection.name }>
   <body>
     <section class="vf-intro | embl-grid embl-grid--has-centered-content">
         <div></div>

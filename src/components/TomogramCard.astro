@@ -17,7 +17,7 @@ console.log(tomogram);
         <button><a href={ tomogram.attributes["_neuroglancer_link"]}>NG</a></button>
         <button><a href={ tomogram.attributes["_vizarr_link"]}>Vizarr</a></button>
         <button><a href={ tomogram.attributes["_molstar_link"]}>Mol*</a></button>
-        <br>
+        <br><br>
         Annotations:
         <ul>
         { Object.values(tomogram["annotation_files"]).map((annfile) => <li>{ annfile["name"] }</li>)}

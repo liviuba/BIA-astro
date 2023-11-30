@@ -15,8 +15,8 @@ const { tomogram } = Astro.props;
             Annotations:
         { Object.values(tomogram.annotation_files).map((annfile) => 
         <div class="row">
-            <div class='box' style={ "background-color: " + annfile.rendering_colour }></div>
-            <span>{annfile.name} - <a href={annfile["starfile_uri"]}>download STAR file</a></span>
+            <div class='box' style={ "background-color: " + annfile["rendering_colour"] }></div>
+            <span>{annfile["name"]} - <a href={annfile["starfile_uri"]}>download STAR file</a></span>
         </div>
         )}
         <hr>
@@ -26,9 +26,6 @@ const { tomogram } = Astro.props;
         <button><a href={ tomogram.attributes["_molstar_link"]}>Mol*</a></button>
         <br>
         <button><a href={ tomogram.mrcfile_uri }>Download tomogram</a></button>
-        <!-- <b>Release date: </b>{ dataset.release_date }<br>
-        <b>Imaging method: </b>{ dataset.imaging_type }<br>
-        <b>Organism: </b>{ dataset.organism } -->
         </p>
     </div>
 </article>

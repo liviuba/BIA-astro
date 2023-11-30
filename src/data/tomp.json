@@ -9,12 +9,14 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/12052022_BrnoKrios_Arctis_grid_newGISc_Position_38/metadata/particles/rln_microtubule_bin1_tomo_449.star",
           "name": "microtubule",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/0f0dad18-106d-41cf-9fc7-f63ee79f0ef9-microtubule"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/0f0dad18-106d-41cf-9fc7-f63ee79f0ef9-microtubule",
+          "rendering_colour": "#FF0000"
         },
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/12052022_BrnoKrios_Arctis_grid_newGISc_Position_38/metadata/particles/rln_ribosome_bin1_tomo_449.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/0f0dad18-106d-41cf-9fc7-f63ee79f0ef9-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/0f0dad18-106d-41cf-9fc7-f63ee79f0ef9-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -34,7 +36,8 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/01122021_BrnoKrios_arctis_lam3_pos27/metadata/particles/rln_rubisco_bin1_tomo_22.star",
           "name": "rubisco",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/2425ab16-e360-4819-93d3-9017d8ebc783-rubisco"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/2425ab16-e360-4819-93d3-9017d8ebc783-rubisco",
+          "rendering_colour": "#0000FF"
         }
       ],
       "attributes": {
@@ -54,12 +57,14 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/17072022_BrnoKrios_Arctis_p3ar_grid_Position_35/metadata/particles/rln_nucleosome_bin1_tomo_649.star",
           "name": "nucleosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/2d24a1b3-c59c-464c-9915-ad9612ef3e7a-nucleosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/2d24a1b3-c59c-464c-9915-ad9612ef3e7a-nucleosome",
+          "rendering_colour": "#00FFFF"
         },
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/17072022_BrnoKrios_Arctis_p3ar_grid_Position_35/metadata/particles/rln_ribosome_bin1_tomo_649.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/2d24a1b3-c59c-464c-9915-ad9612ef3e7a-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/2d24a1b3-c59c-464c-9915-ad9612ef3e7a-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -79,12 +84,14 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/06042022_BrnoKrios_Arctis_grid7_Position_29/metadata/particles/rln_f1atpase_mito_bin1_tomo_79.star",
           "name": "f1atpase",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/32ca7f91-035d-41e6-925c-b5484cb34300-f1atpase"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/32ca7f91-035d-41e6-925c-b5484cb34300-f1atpase",
+          "rendering_colour": "#00FF00"
         },
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/06042022_BrnoKrios_Arctis_grid7_Position_29/metadata/particles/rln_ribosome_bin1_tomo_79.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/32ca7f91-035d-41e6-925c-b5484cb34300-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/32ca7f91-035d-41e6-925c-b5484cb34300-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -104,7 +111,8 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/15042022_BrnoKrios_Arctis_grid9_Position_65/metadata/particles/rln_ribosome_bin1_tomo_260.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/4072c542-d6c5-402c-aadb-ff978445d27d-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/4072c542-d6c5-402c-aadb-ff978445d27d-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -124,7 +132,8 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/01122021_BrnoKrios_arctis_lam2_pos13/metadata/particles/rln_ribosome_bin1_tomo_11.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/44a65f63-ac9c-4d57-954e-39fea7ce4bdf-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/44a65f63-ac9c-4d57-954e-39fea7ce4bdf-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -144,7 +153,8 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/15042022_BrnoKrios_Arctis_grid9_Position_32/metadata/particles/rln_ribosome_bin1_tomo_224.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/748c3c62-e13e-4f1b-8cb4-936b64b8f3d5-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/748c3c62-e13e-4f1b-8cb4-936b64b8f3d5-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -164,12 +174,14 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/14042022_BrnoKrios_Arctis_grid5_Position_1/metadata/particles/rln_f1atpase_mito_bin1_tomo_160.star",
           "name": "f1atpase",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/7c82d906-512f-48c8-8fc6-df2884c370bb-f1atpase"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/7c82d906-512f-48c8-8fc6-df2884c370bb-f1atpase",
+          "rendering_colour": "#00FF00"
         },
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/14042022_BrnoKrios_Arctis_grid5_Position_1/metadata/particles/rln_ribosome_bin1_tomo_160.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/7c82d906-512f-48c8-8fc6-df2884c370bb-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/7c82d906-512f-48c8-8fc6-df2884c370bb-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -189,12 +201,14 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/17072022_BrnoKrios_Arctis_p3ar_grid_Position_76/metadata/particles/rln_ribosome_bin1_tomo_688.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/980610f1-9afe-43d4-8995-3edb523d09eb-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/980610f1-9afe-43d4-8995-3edb523d09eb-ribosome",
+          "rendering_colour": "#FFFF00"
         },
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/17072022_BrnoKrios_Arctis_p3ar_grid_Position_76/metadata/particles/rln_microtubule_bin1_tomo_688.star",
           "name": "microtubule",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/980610f1-9afe-43d4-8995-3edb523d09eb-microtubule"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/980610f1-9afe-43d4-8995-3edb523d09eb-microtubule",
+          "rendering_colour": "#FF0000"
         }
       ],
       "attributes": {
@@ -214,12 +228,14 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/27042022_BrnoKrios_Arctis_grid9_hGIS_Position_13/metadata/particles/rln_ribosome_bin1_tomo_298.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/994ca0dc-98a6-4713-a5b8-dd767df1762c-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/994ca0dc-98a6-4713-a5b8-dd767df1762c-ribosome",
+          "rendering_colour": "#FFFF00"
         },
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/27042022_BrnoKrios_Arctis_grid9_hGIS_Position_13/metadata/particles/rln_microtubule_bin1_tomo_298.star",
           "name": "microtubule",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/994ca0dc-98a6-4713-a5b8-dd767df1762c-microtubule"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/994ca0dc-98a6-4713-a5b8-dd767df1762c-microtubule",
+          "rendering_colour": "#FF0000"
         }
       ],
       "attributes": {
@@ -239,7 +255,8 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/17072022_BrnoKrios_Arctis_p3ar_grid_Position_101/metadata/particles/rln_rubisco_bin1_tomo_599.star",
           "name": "rubisco",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/aaa197cc-88c0-446c-998c-76e274ac7bc1-rubisco"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/aaa197cc-88c0-446c-998c-76e274ac7bc1-rubisco",
+          "rendering_colour": "#0000FF"
         }
       ],
       "attributes": {
@@ -259,7 +276,8 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/08042022_BrnoKrios_Arctis_grid5_gistest_Position_4/metadata/particles/rln_ribosome_bin1_tomo_154.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/b3947611-b62c-4e61-b92c-73a2c5b3b608-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/b3947611-b62c-4e61-b92c-73a2c5b3b608-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -279,12 +297,14 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/27042022_BrnoKrios_Arctis_grid9_hGIS_Position_33/metadata/particles/rln_nucleosome_bin1_tomo_319.star",
           "name": "nucleosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/bf1aafd8-cc3f-4677-bae8-be9bf1646e6f-nucleosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/bf1aafd8-cc3f-4677-bae8-be9bf1646e6f-nucleosome",
+          "rendering_colour": "#00FFFF"
         },
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/27042022_BrnoKrios_Arctis_grid9_hGIS_Position_33/metadata/particles/rln_ribosome_bin1_tomo_319.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/bf1aafd8-cc3f-4677-bae8-be9bf1646e6f-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/bf1aafd8-cc3f-4677-bae8-be9bf1646e6f-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -304,12 +324,14 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/01122021_BrnoKrios_arctis_lam1_pos5/metadata/particles/rln_ribosome_bin1_tomo_3.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/c4a76e28-d6a9-43b4-ab27-e19bc5254050-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/c4a76e28-d6a9-43b4-ab27-e19bc5254050-ribosome",
+          "rendering_colour": "#FFFF00"
         },
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/01122021_BrnoKrios_arctis_lam1_pos5/metadata/particles/rln_nucleosome_bin1_tomo_3.star",
           "name": "nucleosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/c4a76e28-d6a9-43b4-ab27-e19bc5254050-nucleosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/c4a76e28-d6a9-43b4-ab27-e19bc5254050-nucleosome",
+          "rendering_colour": "#00FFFF"
         }
       ],
       "attributes": {
@@ -329,7 +351,8 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/27042022_BrnoKrios_Arctis_grid9_hGIS_Position_44/metadata/particles/rln_ribosome_bin1_tomo_331.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/dcfb7797-b755-441f-8126-48d223fa7f1d-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/dcfb7797-b755-441f-8126-48d223fa7f1d-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -349,7 +372,8 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/27042022_BrnoKrios_Arctis_grid9_hGIS_Position_7/metadata/particles/rln_rubisco_bin1_tomo_346.star",
           "name": "rubisco",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/dd0ef593-97fd-4171-8394-f68da0cd351d-rubisco"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/dd0ef593-97fd-4171-8394-f68da0cd351d-rubisco",
+          "rendering_colour": "#0000FF"
         }
       ],
       "attributes": {
@@ -369,12 +393,14 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/01122021_BrnoKrios_arctis_lam1_pos4/metadata/particles/rln_f1atpase_mito_bin1_tomo_2.star",
           "name": "f1atpase",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/e2172d31-f69a-456d-8d34-5a7d1c5d2cfa-f1atpase"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/e2172d31-f69a-456d-8d34-5a7d1c5d2cfa-f1atpase",
+          "rendering_colour": "#00FF00"
         },
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/01122021_BrnoKrios_arctis_lam1_pos4/metadata/particles/rln_ribosome_bin1_tomo_2.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/e2172d31-f69a-456d-8d34-5a7d1c5d2cfa-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/e2172d31-f69a-456d-8d34-5a7d1c5d2cfa-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {
@@ -394,7 +420,8 @@
         {
           "starfile_uri": "https://ftp.ebi.ac.uk/empiar/world_availability/11756/data/tomoman_minimal_project/17072022_BrnoKrios_Arctis_p3ar_grid_Position_68/metadata/particles/rln_ribosome_bin1_tomo_679.star",
           "name": "ribosome",
-          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/f111a792-c2dd-41fc-b215-e7d821239048-ribosome"
+          "precomp_uri": "https://uk1s3.embassy.ebi.ac.uk/testbucket-bia/annotations/f111a792-c2dd-41fc-b215-e7d821239048-ribosome",
+          "rendering_colour": "#FFFF00"
         }
       ],
       "attributes": {

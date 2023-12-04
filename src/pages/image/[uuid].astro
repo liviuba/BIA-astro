@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import images from "../../data/images.json";
+
+export function getStaticPaths() {
+  return Object.keys(images["images"]).map((uuid) => {
+    return {
+      params:  { uuid: uuid }
+    };
+  });
+}
+
+const { uuid } = Astro.params;
+const image = images["images"][uuid];
+
+const tissueX = (1e6 * image.PhysicalSizeX * image.sizeX).toPrecision(2);
+const tissueY = (1e6 * image.PhysicalSizeY * image.sizeY).toPrecision(2);
+
+---
+<BaseLayout pageTitle={image.accession_id}:{image.alias} >
+  <body>
+    <div class="vf-stack vf-stack--500">
+        <section class="vf-content | embl-grid embl-grid--has-centered-content">
+            <div></div>
+            <div>
+                <h1 class="vf-intro__heading vf-intro__heading--has-tag">{ image.study_accession_id }:{ image.alias }<a href="JavaScript:Void(0);" class="vf-badge vf-badge--primary vf-badge--phases">alpha</a></h1>
+                <h2 class="vf-intro__subheading">{image.name}</h2>
+                <p class="studytitle">{image.study_title}</p>
+            </div>
+            <div>
+                Released {image.release_date}<br>
+                Modified 2023-05-07
+            </div>
+        </section>
+        <section class="vf-content | embl-grid embl-grid--has-centered-content">
+            <div>
+                <h3>Image metadata</h3>
+                {tissueX}μm x {tissueY}μm<br>
+                {image.sizeX} x {image.sizeY} pixels<br>
+                {image.sizeC} channels
+            </div>
+            <div>
+                <iframe style="width: 100%; height: 500px" name="vizarr" src={image.vizarr_uri}></iframe>
+            </div>
+            <div>
+                <h3>Access</h3>
+                License: CC0
+            </div>
+        </section>
+        <section class="vf-content | embl-grid embl-grid--has-centered-content">
+            <div>
+                <h3>Study</h3>
+            </div>
+            <div>Stuff</div>
+            <div></div>
+        </section>
+        <section class="vf-content | embl-grid embl-grid--has-centered-content">
+            <div>
+                <h3>Biosample</h3>
+            </div>
+            <div>
+                <b>Organism:</b> Homo sapiens<br>
+                <b>Biological entity: </b> HeLa cells
+            </div>
+            <div></div>
+        </section>
+        <section class="vf-content | embl-grid embl-grid--has-centered-content">
+            <div>
+                <h3>Specimen</h3>
+            </div>
+            <div>
+                <b>Sample preparation:</b> Cells were seeded onto 11 mm coverslips placed in wells of a 24-well plate to 65–75% confluency. Inhibitors were added as described, and the cells were labelled with 2 µM pacSph in serum-free DMEM for the indicated times. Subsequently, cells were washed with 1 mL PBS three times at RT. Cells were overlaid with 0.5 mL of cold imaging buffer (20 mM HEPES, 115 mM NaCL, 1.2 mM MgCl2, 1.2 mM glucose and 1.8 mM CaCl2, pH 7.4/NaOH), and UV-irradiated (λ~365 nm) on ice for 5 min. Cells were immediately fixed with pre-cooled MeOH at −20 °C for 20 min. Non-cross-linked lipids were extracted by washing three times with 0.78 mL of CHCl3/MeOH/AcOH (10:55:0.75) (v/v) and twice with PBS. Cells were then incubated with 50 μL of click mixture (1 µL 2 mM Alexa-555-azide, 125 µL 10 mM Cu(I)BF4 in acetonitril and 0.5 mL PBS) for 1 h at room temperature in the dark. Cells were then washed with PBS and incubated with 50 μL of primary α-LAMP1 antibody (1:200 in PBS supplemented with 2% BSA and 0.3% Triton X-100) for 1 h in the dark. Coverslips were briefly washed with PBS and incubated with secondary antibody (α-rabbit conjugated to Alexa Fluor 488, 1:800) for 30 min, washed briefly with PBS, and mounted in ProLong Gold Antifade mounting medium (Cell Signalling, Danvers, MA, USA).<br>
+            </div>
+            <div></div>
+        </section>
+        <section class="vf-content | embl-grid embl-grid--has-centered-content">
+            <div>
+                <h3>Image acquisition</h3>
+            </div>
+            <div>
+                Microscopy images were captured using a confocal laser-scanning microscope (Zeiss LSM800) with a 63 × oil objective
+            </div>
+            <div></div>
+        </section>
+    </body>
+</BaseLayout>

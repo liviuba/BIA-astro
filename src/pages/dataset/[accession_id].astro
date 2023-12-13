@@ -1,17 +1,19 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import datasets from "../../data/datasets.json";
+import exports from "../../data/bia-export.json";
 
 export function getStaticPaths() {
-  return Object.keys(datasets).map((accession_id) => {
+  return Object.values(exports["datasets"]).map((dataset) => {
     return {
-      params:  {accession_id: accession_id }
+      params:  {accession_id: dataset.accession_id }
     };
   });
 }
 
 const { accession_id } = Astro.params;
-const study = datasets[accession_id];
+const study = exports["datasets"][accession_id];
+
+const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
 ---
 <BaseLayout pageTitle= {study.accession_id} >
   <body>
@@ -39,5 +41,45 @@ const study = datasets[accession_id];
             { study.description }
         </div>
     </section>
+    <section  class="vf-content | embl-grid embl-grid--has-centered-content">
+      <div>
+        <h2 class="vf-section-header__heading">Biosample</h2>
+      </div>
+      <div>                  
+          <b>Organism: </b> Drosophila melanogaster (fruit fly)
+      </div>
+  </section>
+  <section class="vf-content | embl-grid embl-grid--has-centered-content">
+    <div></div>
+    <div>
+      <table id="viewable">
+        <thead>
+          <tr>
+            <th>Image ID</th>
+            <th>Preview</th>
+            <th>Filename</th>
+            <th>Download Size</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {images.map((image) =>
+            <tr>
+              <th>{image.alias}</th>
+              <th>
+                <img class="vf-figure__image" src={image.thumbnail_uri}>
+              </th>
+              <th>{image.name}</th>
+              <th>3.0MiB</th>
+              <th>
+                <a href={"/image/" + image.uuid}>View</a>
+                Download
+              </th>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    </div>
+  </section>
   </body>
 </BaseLayout>

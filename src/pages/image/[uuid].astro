@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import images from "../../data/images.json";
+import exports from "../../data/bia-export.json";
 
 export function getStaticPaths() {
-  return Object.keys(images["images"]).map((uuid) => {
+  return Object.keys(exports["images"]).map((uuid) => {
     return {
       params:  { uuid: uuid }
     };
@@ -11,13 +11,14 @@ export function getStaticPaths() {
 }
 
 const { uuid } = Astro.params;
-const image = images["images"][uuid];
+
+const image = exports["images"][uuid];
 
 const tissueX = (1e6 * image.PhysicalSizeX * image.sizeX).toPrecision(2);
 const tissueY = (1e6 * image.PhysicalSizeY * image.sizeY).toPrecision(2);
 
 ---
-<BaseLayout pageTitle={image.accession_id}:{image.alias} >
+<BaseLayout pageTitle={image.accession_id}:{image.alias}>
   <body>
     <div class="vf-stack vf-stack--500">
         <section class="vf-content | embl-grid embl-grid--has-centered-content">
@@ -35,16 +36,34 @@ const tissueY = (1e6 * image.PhysicalSizeY * image.sizeY).toPrecision(2);
         <section class="vf-content | embl-grid embl-grid--has-centered-content">
             <div>
                 <h3>Image metadata</h3>
-                {tissueX}μm x {tissueY}μm<br>
-                {image.sizeX} x {image.sizeY} pixels<br>
+                <b>Image size: </b> {tissueX}μm x {tissueY}μm<br>
+                {image.sizeX} x {image.sizeY} pixels<br />
                 {image.sizeC} channels
+                <br /> <br />
+                {Object.entries(image.attributes).map(([key, value]) => (
+                    <p>{key}: {value}</p>
+                ))}
             </div>
             <div>
                 <iframe style="width: 100%; height: 500px" name="vizarr" src={image.vizarr_uri}></iframe>
             </div>
             <div>
-                <h3>Access</h3>
-                License: CC0
+                <h3>Access images</h3>
+                License: CC0 <br/>
+                <br/>
+                <a href={image.vizarr_uri}>
+                    <button class="vf-button vf-button--primary vf-button--sm">Download file</button>
+                </a> 
+                <a href={image.vizarr_uri}>
+                    <button class="vf-button vf-button--primary vf-button--sm">Copy OME-Zarr URI</button>
+                </a>
+                <h3>Visualise</h3>
+                <a href={image.vizarr_uri}>
+                    <button class="vf-button vf-button--primary vf-button--sm">Open in Vizarr viewer</button>
+                </a>
+                <a href={image.vizarr_uri}>
+                    <button class="vf-button vf-button--primary vf-button--sm">Open in ITK viewer</button>
+                </a>
             </div>
         </section>
         <section class="vf-content | embl-grid embl-grid--has-centered-content">

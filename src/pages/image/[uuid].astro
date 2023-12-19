@@ -26,6 +26,7 @@ const tissueY = (1e6 * image.PhysicalSizeY * image.sizeY).toPrecision(2);
             <div>
                 <h1 class="vf-intro__heading vf-intro__heading--has-tag">{ image.study_accession_id }:{ image.alias }<a href="JavaScript:Void(0);" class="vf-badge vf-badge--primary vf-badge--phases">alpha</a></h1>
                 <h2 class="vf-intro__subheading">{image.name}</h2>
+                {image.original_relpath}
                 <p class="studytitle">{image.study_title}</p>
             </div>
             <div>

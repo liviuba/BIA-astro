@@ -55,7 +55,6 @@ const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
       <table id="viewable">
         <thead>
           <tr>
-            <th>Image ID</th>
             <th>Preview</th>
             <th>Filename</th>
             <th>Download Size</th>
@@ -65,7 +64,6 @@ const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
         <tbody>
           {images.map((image) =>
             <tr>
-              <th>{image.alias}</th>
               <th>
                 <img class="vf-figure__image" src={image.thumbnail_uri}>
               </th>

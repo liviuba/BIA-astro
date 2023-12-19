@@ -18,7 +18,8 @@ const tissueX = (1e6 * image.PhysicalSizeX * image.sizeX).toPrecision(2);
 const tissueY = (1e6 * image.PhysicalSizeY * image.sizeY).toPrecision(2);
 
 ---
-<BaseLayout pageTitle={image.accession_id}:{image.alias}>
+
+<BaseLayout pageTitle={image["accession_id"] + ":" + image["alias"]}>
   <body>
     <div class="vf-stack vf-stack--500">
         <section class="vf-content | embl-grid embl-grid--has-centered-content">

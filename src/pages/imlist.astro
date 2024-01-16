@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import images from "../data/images.json";
+---
+<BaseLayout pageTitle="Image list">
+    <body>
+        <ul>
+        {Object.values(images["images"]).map((image) => 
+            <li>
+                <a href={"imaged/" + image.uuid}>{image.study_accession_id}:{image.name}</a>
+            </li>
+        )}
+        </ul>
+    </body>
+</BaseLayout>

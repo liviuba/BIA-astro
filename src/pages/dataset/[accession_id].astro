@@ -40,6 +40,11 @@ const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
             </figure>  
             { study.description }
         </div>
+        <div>
+          <a href={study.links[0]["url"]}>
+            <button class="vf-button vf-button--primary vf-button--sm">Original study</button>
+          </a>
+        </div>
     </section>
     <section  class="vf-content | embl-grid embl-grid--has-centered-content">
       <div>

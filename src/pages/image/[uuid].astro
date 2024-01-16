@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import exports from "../../data/bia-export.json";
+import SourceImage from "../../components/SourceImage.astro"
 
 export function getStaticPaths() {
   return Object.keys(exports["images"]).map((uuid) => {
@@ -68,11 +69,14 @@ const tissueY = (1e6 * image.PhysicalSizeY * image.sizeY).toPrecision(2);
                 </a>
             </div>
         </section>
+        { ( image.source_image_uuid != null ) &&
+            <SourceImage image={ image} />
+        }
         <section class="vf-content | embl-grid embl-grid--has-centered-content">
             <div>
                 <h3>Study</h3>
             </div>
-            <div>Stuff</div>
+            <div>Study details here</div>
             <div></div>
         </section>
         <section class="vf-content | embl-grid embl-grid--has-centered-content">

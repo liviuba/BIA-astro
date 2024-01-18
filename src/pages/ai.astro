@@ -4,6 +4,9 @@ import DatasetCard from '../components/DatasetCard.astro';
 import datasets from "../data/datasets.json";
 
 import collection from '../data/ai.json';
+import exports from "../data/bia-ai-export.json";
+
+const datasets = exports["datasets"];
 
 ---
 <BaseLayout pageTitle={ collection.name }>

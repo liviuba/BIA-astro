@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import exports from "../../data/bia-ai-export.json";
+
+export function getStaticPaths() {
+  return Object.values(exports["datasets"]).map((dataset) => {
+    return {
+      params:  {accession_id: dataset.accession_id }
+    };
+  });
+}
+
+const { accession_id } = Astro.params;
+const study = exports["datasets"][accession_id];
+
+const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
+---
+<BaseLayout pageTitle= {study.accession_id} >
+  <body>
+    <section class="vf-intro | embl-grid embl-grid--has-centered-content">
+        <div></div>
+        <div>
+            <h1 class="vf-intro__heading vf-intro__heading--has-tag">{ study.accession_id }<a href="JavaScript:Void(0);" class="vf-badge vf-badge--primary vf-badge--phases">alpha</a></h1>
+            <h2 class="vf-intro__subheading">{ study.title }</h2>
+            Released { study.release_date }<br>
+            <!-- {{ authors }} -->
+        </div>
+         <div></div>
+    </section>
+    <section  class="vf-content | embl-grid embl-grid--has-centered-content">
+        <div>
+          <h2 class="vf-section-header__heading">Content</h2>
+          <ul class="vf-list">
+            <li>{study.n_images} images</li>
+          </ul>
+        </div>
+        <div>                  
+          <table class="vf-table--striped">
+            <colgroup>
+              <col span="1" style="width: 50%;">
+              <col span="1" style="width: 50%;">                         
+            </colgroup>
+            <tr class="vf-table__row">  
+            <td class="vf-table__cell">             
+              <figure class="vf-figure">
+                <img class="vf-figure__image" src={ study.example_image_uri } alt="Example image for this dataset">
+                <figcaption class="vf-figure__caption">Example image for this dataset</figcaption>
+              </figure> 
+              </td> 
+            <td class="vf-table__cell">
+              <figure class="vf-figure">
+                <img class="vf-figure__image" src={ study.example_annotation_uri } alt="Example annotation for this dataset">
+                <figcaption class="vf-figure__caption">Example annotation for this dataset</figcaption>
+              </figure>
+            </td>
+          </tr> 
+          </table>
+        </div>
+        <div>
+          <a href={study.links[0]["url"]}>
+            <button class="vf-button vf-button--primary vf-button--sm">Original study</button>
+          </a>
+        </div>
+    </section>
+    <section  class="vf-content | embl-grid embl-grid--has-centered-content">
+      <div>
+        <h2 class="vf-section-header__heading">Biosample</h2>
+      </div>
+      <div>                  
+          <b>Organism: </b> { study.organism }
+      </div>
+  </section>
+  <section  class="vf-content | embl-grid embl-grid--has-centered-content">
+    <div>
+      <h2 class="vf-section-header__heading">Imaging </h2>
+    </div>
+  <div><b>Imaging type: </b> { study.imaging_type } </div>
+  </section>
+  <section class="vf-content | embl-grid embl-grid--has-centered-content">
+    <div></div>
+    <div>
+      <table id="viewable">
+        <thead>
+          <tr>
+            <th>Preview</th>
+            <th>Filename</th>
+            <th>Download Size</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {images.map((image) =>
+            <tr>
+              <th>
+                <img class="vf-figure__image" src={image.thumbnail_uri}>
+              </th>
+              <th>{image.name}</th>
+              <th>None</th>
+              <th>
+                <a href={"/image/" + image.uuid}>View</a>
+                Download
+              </th>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="embl-grid embl-grid--has-centered-content section-spacing">
+    <div class="vf-section-header">
+      <h3 class="vf-section-header__heading" id="annotations">Annotations
+      <i class="fa-solid fa-circle-info" title="Annotation in the context of AI, is the task of marking up data, such as images, so it can be recognised by models and used to make predictions."></i></h3>
+      <ul class="vf-list">
+        <li><b><a href={ `/aiglossary` } target=”_blank”>Annotation type(s)</a>: </b><i class="fa-solid fa-circle-info" title="Click on the Annotation type(s) to go to the page with a glossary"></i>
+        { study.annotation_type }</li>
+        <li><b>Annotation method(s): </b> { study.annotation_method }</li>
+    </div>
+  </body>
+</BaseLayout>

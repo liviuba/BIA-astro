@@ -2,14 +2,16 @@
 //const pagenames = ["Home", "Browse", "Submit", "Galleries", "Help", "Policies", "About"];
 const pageData = {
     help: "Help Overview",
-    faq: "FAQ",  
-    helpfilelist: "File List Help",
-    submitannotations: "Submit Annotations",
-    aiglossary: "Annotation Types",
+    faq: "FAQ",      
     helpsearch: "Searching Data",
     helpdownload:"Downloading Data",
     helpimagesatebi: "Image Data at EBI",
     helptools: "Supporting Tools"
+}
+const submHelp = {
+  helpfilelist: "File List Help",
+    submitannotations: "Submit Annotations",
+    aiglossary: "Annotation Types"
 }
 const rembiHelp = {
   rembihelpoverview: "REMBI Overview",
@@ -26,6 +28,17 @@ const rembiHelp = {
         )
       )}
     </ul>
+    <details class="vf-details" open>
+      <summary class="vf-details--summary">Submission Help</summary>
+    <ul class="vf-list vf-list--l">
+      {Object.entries(submHelp).map(([key, value]) => (
+        <li class="vf-list__item">
+            <a href={`/${key}`} class="vf-navigation__link">{value}</a>
+        </li>
+        )
+      )}
+    </ul> 
+  </details>   
     <details class="vf-details" open>
       <summary class="vf-details--summary">REMBI Help</summary>
     <ul class="vf-list vf-list--l">

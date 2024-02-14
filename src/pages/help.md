@@ -4,6 +4,4 @@ layout: ../layouts/HelpLayout.astro
 ---
 ## Help Overview
 
-### Summary
-
-Test
+Please use the sidebar menu links on the left to navigate the help pages. 

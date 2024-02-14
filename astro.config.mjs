@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import mdx from "@astrojs/mdx";
+import yaml from '@rollup/plugin-yaml';
 
 //import preact from "@astrojs/preact";
 
@@ -7,5 +8,8 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   //output: 'hybrid',
   //integrations: [mdx(), preact()]
-  integrations: [mdx()]
+  integrations: [mdx()],
+  vite: {
+    plugins: [yaml()]
+  }
 });

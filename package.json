@@ -14,5 +14,8 @@
     "@astrojs/mdx": "^1.1.5",
     "astro": "^3.4.0",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-yaml": "^4.1.2"
   }
 }

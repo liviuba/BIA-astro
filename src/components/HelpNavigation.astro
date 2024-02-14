@@ -4,13 +4,17 @@ const pageData = {
     help: "Help Overview",
     faq: "FAQ",  
     helpfilelist: "File List Help",
-    rembihelpoverview: "REMBI Overview",
-    rembihelplab: "REMBI Lab Guide",
-    rembihelpexamples: "REMBI Examples",
     submitannotations: "Submit Annotations",
     aiglossary: "Annotation Types",
+    helpsearch: "Searching Data",
     helpdownload:"Downloading Data",
-    helpimagesatebi: "Image Data at EBI"
+    helpimagesatebi: "Image Data at EBI",
+    helptools: "Supporting Tools"
+}
+const rembiHelp = {
+  rembihelpoverview: "REMBI Overview",
+  rembihelplab: "REMBI Lab Guide",
+  rembihelpexamples: "REMBI Examples",
 }
 ---
 <!--  <nav class="vf-navigation vf-navigation--main | vf-sidebar" style="margin-top: 0.5rem;"> -->
@@ -22,4 +26,15 @@ const pageData = {
         )
       )}
     </ul>
+    <details class="vf-details" open>
+      <summary class="vf-details--summary">REMBI Help</summary>
+    <ul class="vf-list vf-list--l">
+      {Object.entries(rembiHelp).map(([key, value]) => (
+        <li class="vf-list__item">
+            <a href={`/${key}`} class="vf-navigation__link">{value}</a>
+        </li>
+        )
+      )}
+    </ul> 
+  </details>   
 <!-- </nav> -->

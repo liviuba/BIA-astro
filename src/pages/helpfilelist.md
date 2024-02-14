@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/MarkdownLayout.astro
+layout: ../layouts/HelpLayout.astro
 title: File List guide
 ---
 ## File List Guide

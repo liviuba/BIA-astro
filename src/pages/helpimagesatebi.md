@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/MarkdownLayout.astro
+layout: ../layouts/HelpLayout.astro
 title: Image archiving at EBI
 ---
 # Image archiving at EBI

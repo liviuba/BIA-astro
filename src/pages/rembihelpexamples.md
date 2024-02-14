@@ -1,6 +1,6 @@
 ---
 title: Study Component Guidance
-layout: ../layouts/MarkdownLayout.astro
+layout: ../layouts/HelpLayout.astro
 ---
 
 Study Component Guidance

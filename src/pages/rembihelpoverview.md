@@ -1,6 +1,6 @@
 ---
 title: REMBI Overview
-layout: ../layouts/MarkdownLayout.astro
+layout: ../layouts/HelpLayout.astro
 ---
 
 REMBI Overview

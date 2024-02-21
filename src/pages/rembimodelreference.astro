@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HelpNavigation from '../components/HelpNavigation.astro';
+// import rembi_types from "../data/rembi_types.yaml";
+import ModelHelpCard from '../components/ModelHelpCard.astro';
+---
+<BaseLayout pageTitle="REMBI Model Reference">
+  <body>
+    <section class="vf-intro | embl-grid embl-grid--has-centered-content">
+        <div>
+          <HelpNavigation />
+        </div>
+        <div>
+            <h2 class="vf-intro__subheading">"REMBI Model Reference"</h2>
+        </div>
+        <div></div>
+    </section> 
+    <section class="vf-card-container vf-card-container__col-3 | vf-u-background-color-ui--white vf-u-fullbleed" style="--vf-card__image--aspect-ratio: 16 / 9;">
+        <div class="vf-card-container__inner">
+            <!-- Fix the ModelHelpCard first -->
+            <!-- { Object.values(rembi_types).map((rembi_types) => ( <ModelHelpCard type={ rembi_types } /> )) } -->
+        </div>
+    </section>
+  </body>
+</html>
+</BaseLayout>

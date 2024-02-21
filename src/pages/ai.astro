@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import DatasetCard from '../components/DatasetCard.astro';
-import datasets from "../data/datasets.json";
 
-import collection from '../data/visualisation.json';
+import collection from '../data/ai.json';
+import exports from "../data/bia-ai-export.json";
+import AIDatasetCard from '../components/AIDatasetCard.astro';
+
+const datasets = exports["datasets"];
 
 ---
 <BaseLayout pageTitle={ collection.name }>
@@ -21,7 +23,7 @@ import collection from '../data/visualisation.json';
     </section> 
     <section class="vf-card-container vf-card-container__col-3 | vf-u-background-color-ui--white vf-u-fullbleed" style="--vf-card__image--aspect-ratio: 16 / 9;">
         <div class="vf-card-container__inner">
-            { Object.values(datasets).map((dataset) => ( <DatasetCard dataset={ dataset } /> )) }
+          { Object.values(datasets).map((dataset) => ( <AIDatasetCard dataset={ dataset } /> )) }
         </div>
     </section>
   </body>

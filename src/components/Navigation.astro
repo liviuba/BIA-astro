@@ -1,12 +1,22 @@
 ---
-const pagenames = ["Home", "Browse", "Submit", "Galleries", "Help", "Policies", "About"];
+//const pagenames = ["Home", "Browse", "Submit", "Galleries", "Help", "Policies", "About"];
+const pageData = {
+    "": "Home",
+    datasets: "Browse",
+    submit: "Submit",
+    galleries: "Galleries",
+    help: "Help",
+    policies: "Policies",
+    aboutus: "About"
+}
 ---
 <nav class="vf-navigation vf-navigation--main | vf-cluster" style="margin-top: 0.5rem;">
     <ul class="vf-navigation__list | vf-list | vf-cluster__inner">
-      {pagenames.map((pagename) =>
+      {Object.entries(pageData).map(([key, value]) => (
         <li class="vf-navigation__item">
-            <a href="/" class="vf-navigation__link">{pagename}</a>
+            <a href={`/${key}`} class="vf-navigation__link">{value}</a>
         </li>
+        )
       )}
     </ul>
 </nav>

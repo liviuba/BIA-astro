@@ -1,0 +1,24 @@
+{
+  "name": "Galleries",
+  "title": "BioImage Archive Explorer",
+  "collections": [
+    {
+      "name":"ai",
+      "title":"AI Gallery",
+      "subtitle":"A selection of AI related datasets",
+      "summary_image":"https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD493-example.png"
+    },
+    {
+      "name":"vis",
+      "title":"Visual Gallery",
+      "subtitle":"A selection of datasets with striking images",
+      "summary_image":"https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD582-example.png"
+    },
+    {
+      "name":"vem",
+      "title":"Volume EM Gallery",
+      "subtitle":"A selection of EMPIAR datasets",
+      "summary_image":"https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10967/IM1/IM1-representative-512-512.png"
+    }
+  ]
+}

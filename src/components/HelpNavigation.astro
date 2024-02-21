@@ -6,17 +6,19 @@ const pageData = {
     helpdownload:"Downloading Data",
     helpimagesatebi: "Image Data at EBI",
     helptools: "Supporting Tools",
-    gallariescontribute: "Contribute to Galleries"
+    gallariescontribute: "Contribute to Galleries",
+    linkingarchives: "Linking to Other Archives"
 }
 const submHelp = {
   helpfilelist: "File List Help",
     submitannotations: "Submit Annotations",
     aiglossary: "Annotation Types"
 }
-const rembiHelp = {
+const metadataHelp = {
   rembihelpoverview: "REMBI Overview",
   rembihelplab: "REMBI Lab Guide",
   rembihelpexamples: "REMBI Examples",
+  mifahelpoverview: "MIFA Overview"
 }
 ---
 <!--  <nav class="vf-navigation vf-navigation--main | vf-sidebar" style="margin-top: 0.5rem;"> -->
@@ -37,9 +39,9 @@ const rembiHelp = {
   </ul> 
 </details>   
   <details class="vf-details" open>
-    <summary class="vf-details--summary">REMBI Help</summary>
+    <summary class="vf-details--summary">Metadata Help</summary>
   <ul class="vf-list vf-list--l">
-    {Object.entries(rembiHelp).map(([key, value]) => (
+    {Object.entries(metadataHelp).map(([key, value]) => (
       <li class="vf-list__item">
           <a href={`/${key}`} class="vf-navigation__link">{value}</a>
       </li>

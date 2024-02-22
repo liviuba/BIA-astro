@@ -94,7 +94,11 @@
           "type": "original_submission",
           "url": "https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD570"
         }
-      ]
+      ],
+      "code_desc":"Link to Github Repo with links to other codes used in the analysis",
+      "code_link":"https://github.com/elo073/5loclung/",
+      "scseq_desc":"10xVisium single cell RNA-seq data ",
+      "scseq_link":"https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-11640"
     }
   }
 }

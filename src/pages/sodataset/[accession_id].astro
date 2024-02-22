@@ -6,7 +6,10 @@ import studyImage from '../../assets/study.png';
 import biosampleImage from '../..//assets/biosample.png';
 import imacqImage from '../../assets/im_acquisition.png';
 import specimenImage from '../../assets/specimen.png';
-import annotationsImage from '../../assets/annotations.png';
+import cellImage from '../../assets/cells_icon.png';
+import dnaImage from '../../assets/dna_icon.png';
+import codeImage from '../../assets/code_icon.png';
+
 
 export function getStaticPaths() {
   return Object.values(exports["datasets"]).map((dataset) => {
@@ -22,7 +25,7 @@ const study = exports["datasets"][accession_id];
 const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
 ---
 <BaseLayout pageTitle= {study.accession_id} >
-  <body>
+  <body class="vf-body">
     <section class="vf-intro | embl-grid embl-grid--has-centered-content">
         <div></div>
         <div>
@@ -49,19 +52,20 @@ const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
             </a>
           </li>
           <li class="vf-list__item">
-            <a class="vf-list__link" href="#annotations">
-              Viewable Annotations
+            <a class="vf-list__link" href="#spatial_omics">
+              Spatial-omics data
             </a>
           </li>
           <li class="vf-list__item">
-            <a class="vf-list__link" href="#viewable_images">
+            <a class="vf-list__link" href="#code">
+              Analysis Code
+            </a>
+            </li>
+          <li class="vf-list__item">
+            <a class="vf-list__link" href="#all_images">
               All Images
             </a>
           </li>
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="#annotations">
-              All Annotations
-            </a>
           </ul>
         </div>
         <div>                                   
@@ -76,23 +80,23 @@ const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
       <section class="vf-content">
         <div class="vf-grid vf-grid__col-4">
         <div> Images<br/> {study.n_images}</div>
-        <div> Annotations <br> None </div>
+        <div> Other Data <br> None </div>
         <div> Study Size <br> None </div>
         <div> File Types <br> None </div>
     </div>
     </section>
-    <div style="width: 1638px; height: 32px; padding-top: 16px; padding-bottom: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+    <div style="width: 1238px; height: 22px; padding-top: 16px; padding-bottom: 1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
       <div style="align-self: stretch; height: 0px; border: 1px #D0D0CE solid"></div>
     </div>
-    <section  class="vf-intro | embl-grid embl-grid--has-centered-content">
+    <section  class="embl-grid embl-grid--has-centered-content">
         <div>
         <h2 class="vf-section-header__heading" id="study">Study Information</h2>
-        Complete metadata
-        <p>Study</p>
+        <p>Complete metadata</p>
+        <h3>Study</h3>
         <img src={studyImage.src} alt="Study" style="width: 60px">
       </div>
       <div>
-        <br>
+        <br><br>
         <a href={study.links[0]["url"]}>
           <button class="vf-button vf-button--primary vf-button--sm">Original submission page</button>
         </a>
@@ -101,40 +105,29 @@ const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
       </div>
       <div></div>
     </section>
-    <section  class="vf-intro | embl-grid embl-grid--has-centered-content">
+    <section class="embl-grid embl-grid--has-centered-content">
         <div>
-        <h3 class="vf-section-header__heading">Biosample</h3>
+        <h3>Biosample</h3>
           <img src={biosampleImage.src} alt="Biosample" style="width: 60px">
       </div>
-      <div>                  
+      <div>
+        <br>                  
           <b>Organism: </b> { study.organism }
       </div>
       <div></div>
   </section>
-  <section  class="vf-content | embl-grid embl-grid--has-centered-content">
+  <section class="embl-grid embl-grid--has-centered-content">
     <div>
-      <h3 class="vf-section-header__heading">Image Acquisition </h3>
+      <h3>Image Acquisition </h3>
       <img src={imacqImage.src} alt="Imaging" style="width: 60px">
     </div>
   <div>
+    <br>
     <b>Imaging method: </b> { study.imaging_type } 
   </div>
   <div></div>
   </section>
-  <section  class="vf-content | embl-grid embl-grid--has-centered-content">
-    <div>
-      <h3 class="vf-section-header__heading" title="Annotation in the context of AI, is the task of marking up data, such as images, so it can be recognised by models and used to make predictions."> Annotations </h3>
-      <img src={annotationsImage.src} alt="Imaging" style="width: 60px">
-    </div>
-    <div>
-      <b><a href={ `/aiglossary` } target=”_blank”>Annotation type(s)</a>: </b><i class="fa-solid fa-circle-info" title="Click on the Annotation type(s) to go to the page with a glossary"></i>
-      { study.annotation_type }
-      <br></br>
-      <b>Annotation method(s): </b> { study.annotation_method }
-    </div>
-    <div></div>
-  </section>
-  <div style="width: 1638px; height: 32px; padding-top: 16px; padding-bottom: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+  <div style="width: 1238px; height: 22px; padding-top: 16px; padding-bottom: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
     <div style="align-self: stretch; height: 0px; border: 1px #D0D0CE solid"></div>
   </div>
   <section class="vf-content | embl-grid embl-grid--has-centered-content">
@@ -173,12 +166,65 @@ const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
     </div>
     <div></div>
   </section>
-  <div style="width: 1638px; height: 32px; padding-top: 16px; padding-bottom: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+  <div style="width: 1238px; height: 22px; padding-top: 16px; padding-bottom: 1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
     <div style="align-self: stretch; height: 0px; border: 1px #D0D0CE solid"></div>
   </div>
-  <section class="embl-grid embl-grid--has-centered-content section-spacing">
+  <section class="embl-grid embl-grid embl-grid--has-centered-content">
+    <div class="vf-section-header" id="spatial_omics">
+      <h3 class="vf-section-header__heading" title="Cell segmentation, RNA spots and Omics data"> Spatial-omics data </h3>
+    </div>
+    <div>
+    </div>
+    <div></div>
+  </section>
+  { ( study.cell_seg_descr != null ) && 
+  <section class="embl-grid embl-grid--has-centered-content">
+        <div class="vf-section-header">
+        <h3>Cell segmentation and labels</h3>
+          <img src={cellImage.src} alt="Cell segmentation" style="width: 60px">
+      </div>
+      <div>                  
+          <p><b>Description: </b> { study.cell_seg_descr }
+          </p>
+          <p><b>Link:</b> <a href={ study.cell_seg_link }> {study.cell_seg_link} </a></p>
+      </div>
+    <div></div>
+  </section>
+}
+  <section class="embl-grid embl-grid--has-centered-content">
+        <div class="vf-section-header">
+        <h3>single-cell sequencing</h3>
+          <img src={dnaImage.src} alt="single-cell sequencing" style="width: 60px">
+      </div>
+      <div>                  
+          <p><b>Description: </b> { study.scseq_desc }
+          </p>
+          <p><b>Link:</b> <a href={ study.scseq_link }> {study.scseq_link} </a></p>
+      </div>
+    <div></div>
+  </section>
+  <div style="width: 1238px; height: 22px; padding-top: 16px; padding-bottom: 1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+    <div style="align-self: stretch; height: 0px; border: 1px #D0D0CE solid"></div>
+  </div>
+  <section class="embl-grid embl-grid--has-centered-content">
+        <div class="vf-section-header" id="code">
+        <h3 class="vf-section-header__heading">Analysis code</h3>
+        <br>
+          <img src={codeImage.src} alt="Analysis code" style="width: 60px">
+      </div>
+      <div>                  
+          <p><b>Description: </b> { study.code_desc }
+          </p>
+          <p><b>Link:</b> <a href={ study.code_link }> {study.code_link} </a> </p>
+      </div>
+    <div></div>
+  </section>
+  <div style="width: 1238px; height: 22px; padding-top: 16px; padding-bottom: 1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+    <div style="align-self: stretch; height: 0px; border: 1px #D0D0CE solid"></div>
+  </div>
+  <section class="vf-intro | embl-grid embl-grid--has-centered-content section-spacing">
     <div class="vf-section-header">
-      <h3 class="vf-section-header__heading" id="annotations"> Viewable Annotations </h3>
+      <h3 class="vf-section-header__heading" id="all_images"> All images </h3>
     </div>
     <div></div>
     <div> </div>

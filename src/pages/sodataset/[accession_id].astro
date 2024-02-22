@@ -191,6 +191,7 @@ const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
     <div></div>
   </section>
 }
+{ ( study.scseq_desc != null ) && 
   <section class="embl-grid embl-grid--has-centered-content">
         <div class="vf-section-header">
         <h3>single-cell sequencing</h3>
@@ -203,6 +204,7 @@ const images = study.image_uuids.map((uuid) => exports["images"][uuid]);
       </div>
     <div></div>
   </section>
+}
   <div style="width: 1238px; height: 22px; padding-top: 16px; padding-bottom: 1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
     <div style="align-self: stretch; height: 0px; border: 1px #D0D0CE solid"></div>
   </div>

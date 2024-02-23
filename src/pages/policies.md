@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/MarkdownLayout.astro
+layout: ../layouts/PoliciesLayout.astro
 title: BioImage Archive policies
 ---
 

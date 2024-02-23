@@ -30,7 +30,7 @@ A File List is used to describe all the files that you wish to include in your s
 You must have one file list per <a href="rembihelpexamples">study component</a> and one file list per annotations section (if applicable).
 
 * File lists are tabular data, either in tsv or Excel (.xlsx) format. 
-* The first column of the header has to contain the word "Files".
+* The first column of the header has to be the word "Files".
 * It has to have one file per line.
 * Do not leave blank lines.
 * Filenames are case-sensitive.
@@ -56,7 +56,7 @@ A File List is used to describe all the files that you wish to include in your s
 
 File lists are tabular data, and can be uploaded either in tsv or Excel (.xlsx) format. Unless it is generated programmatically, we recommend editing using a spreadsheet software (Google Sheets, Excel, LibreOffice), and then exporting as tsv and uploading the export.
 
-The first line will be the File List's header. The first column of the header has to contain the word "Files". Values for other header columns are not predefined; we recommend using descriptive, self-explanatory names. Some examples of column names:
+The first line will be the File List's header. The first column of the header has to be the word "Files". Values for other header columns are not predefined; we recommend using descriptive, self-explanatory names. Some examples of column names:
 
 * For compound treatment experiments: Compound, Concentration, Time  (<a href="https://docs.google.com/spreadsheets/d/1Pj-JTXytPCw7p4-oBEg5MCdpbHZ6DbyVsHS6dx3zzcI/edit?usp=sharing" target="_blank">Example File List</a>)
 * For genetic variation studies: Gene Identifier, Gene Symbol (<a href="https://docs.google.com/spreadsheets/d/1jMPOj9cZnU_0DUXwAU-wndcKOQxziqHD5WRdw3mVZCc/edit?usp=sharing" target="_blank">Example File List</a>)

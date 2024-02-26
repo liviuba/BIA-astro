@@ -82,7 +82,16 @@
       "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD570-example.png",
       "imaging_type": "confocal fluorescence microscopy",
       "organism": "Mus musculus (mouse)",
+      "scseq_desc": "10xVisium single cell RNA-seq data",
+      "scseq_link": "https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-11640",
+      "code_desc": "Link to Github Repo with links to other codes used in the analysis",
+      "code_link": "https://github.com/elo073/5loclung/",
       "n_images": 109,
+      "annotation_type": null,
+      "annotation_method": null,
+      "example_annotation_uri": null,
+      "models_description": null,
+      "models_uri": null,
       "image_uuids": [
         "113a6e38-f613-4f7d-ae24-6ad30327876d",
         "c338b7ba-07e1-45ab-9152-dae89050eb84",
@@ -94,11 +103,7 @@
           "type": "original_submission",
           "url": "https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD570"
         }
-      ],
-      "code_desc":"Link to Github Repo with links to other codes used in the analysis",
-      "code_link":"https://github.com/elo073/5loclung/",
-      "scseq_desc":"10xVisium single cell RNA-seq data ",
-      "scseq_link":"https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-11640"
+      ]
     }
   }
 }

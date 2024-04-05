@@ -1,165 +1,26 @@
 {
-  "S-BSST410": {
-    "accession_id": "S-BSST410",
-    "title": "Axis Specification in Zebrafish Is Robust to Cell Mixing and Reveals a Regulation of Pattern Formation by Morphogenesis",
-    "release_date": "2020-06-05",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BSST410-example.png",
-    "imaging_type": "confocal fluorescence microscopy",
-    "organism": "Danio rerio (Zebrafish)",
-    "n_images": 16
-  },
-  "S-BSST522": {
-    "accession_id": "S-BSST522",
-    "title": "Actomyosin forces and the energetics of red blood cell invasion by the malaria parasite Plasmodium falciparum",
-    "release_date": "2020-11-01",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BSST522-example.png",
-    "imaging_type": "Brightfield microscopy",
-    "organism": "Plasmodium falciparum",
-    "n_images": 1282
-  },
-  "S-BIAD7": {
-    "accession_id": "S-BIAD7",
-    "title": "High-throughput microscopy exposes a pharmacological window in which dual leucine zipper kinase inhibition preserves neuronal network connectivity",
-    "release_date": "2019-05-16",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD7/IM76/IM76-representative-512-512.png",
-    "imaging_type": "confocal fluorescence microscopy",
-    "organism": "mus musculus (mouse)",
-    "n_images": 1170
-  },
-  "S-BIAD144": {
-    "accession_id": "S-BIAD144",
-    "title": "The glucosylceramide synthase inhibitor PDMP causes lyso-somal lipid accumulation and mTOR inactivation",
-    "release_date": "2021-05-31",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD144-example.png",
-    "imaging_type": "confocal fluorescence microscopy",
-    "organism": "Homo sapiens (human)",
-    "n_images": 223
-  },
-  "S-BIAD217": {
-    "accession_id": "S-BIAD217",
-    "title": "Large-scale electron microscopy database for human type 1 diabetes",
-    "release_date": "2021-10-11",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD217/IM692/IM692-representative-512-512.png",
-    "imaging_type": "scanning transmission EM (STEM)",
-    "organism": "Homo sapiens (human)",
-    "n_images": 0
-  },
-  "S-BIAD229": {
-    "accession_id": "S-BIAD229",
-    "title": "Arabidopsis guard cell chloroplasts import cytosolic ATP for starch turnover and stomatal opening",
-    "release_date": "2021-12-31",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD229-example.png",
-    "imaging_type": "confocal fluorescence microscopy",
-    "organism": "Arabidopsis thaliana (thale cress)",
-    "n_images": 434
-  },
-  "S-BIAD425": {
-    "accession_id": "S-BIAD425",
-    "title": "Integrating analog and digital modes of gene expression at Arabidopsis FLC",
-    "release_date": "2022-04-22",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD425-example.png",
-    "imaging_type": "confocal fluorescence microscopy",
-    "organism": "Arabidopsis thaliana",
-    "n_images": 507
-  },
-  "S-BIAD453": {
-    "accession_id": "S-BIAD453",
-    "title": "The expression of cancer-testis antigens is associated with immune cell infiltration in the microenvironment of non-small cell lung cancer",
-    "release_date": "2023-02-07",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD453/IM1/IM1-representative-512-512.png",
-    "imaging_type": "bright-field microscopy",
-    "organism": "Homo sapiens (human)",
-    "n_images": 128
-  },
-  "S-BIAD464": {
-    "accession_id": "S-BIAD464",
-    "title": "Diffusion and bulk flow of amino acids mediate calcium waves in plants",
-    "release_date": "2022-10-22",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD464-example.png",
-    "imaging_type": "fluorescence microscopy",
-    "organism": "Arabidopsis thaliana (thale cress)",
-    "n_images": 1423
-  },
-  "S-BIAD501": {
-    "accession_id": "S-BIAD501",
-    "title": "Open TG-GATEs histopathology dataset ",
-    "release_date": "2022-09-22",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD501-example.png",
-    "imaging_type": "digital scanner",
-    "organism": "Rattus norvegicus (brown rat)",
-    "n_images": 8342
-  },
-  "S-BIAD515": {
-    "accession_id": "S-BIAD515",
-    "title": "RNAScope Data - Mapping the developing human immune system across organs",
-    "release_date": "2022-08-09",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD515-example.png",
-    "imaging_type": "confocal fluorescence microscopy",
-    "organism": "Homo sapiens (human)",
-    "n_images": 7
-  },
-  "S-BIAD531": {
-    "accession_id": "S-BIAD531",
-    "title": "Automated staging of zebrafish embryos using machine-learning ",
-    "release_date": "2022-08-29",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD531-example.png",
-    "imaging_type": "bright-field microscopy",
-    "organism": "Danio rerio (zebrafish)",
-    "n_images": 1142
-  },
-  "S-BIAD548": {
-    "accession_id": "S-BIAD548",
-    "title": "Non-invasive, in vivo fluorescence imaging in mice using SiRos1300 and SiRos1550 dye nanoemulsions ",
-    "release_date": "2022-09-12",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD548/IM1/IM1-representative-512-512.png",
-    "imaging_type": "Fluorescence imaging using shortwave infrared camera",
-    "organism": "Mus musculus (mouse)",
-    "n_images": 4
-  },
-  "S-BIAD564": {
-    "accession_id": "S-BIAD564",
-    "title": "In vivo SPIM and confocal imaging of neuronal efferocytosis by microglia",
-    "release_date": "2022-11-18",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD564-example.png",
-    "imaging_type": "Spinning disk confocal microscopy, SPIM",
-    "organism": "Danio rerio",
-    "n_images": 258
-  },
-  "S-BIAD570": {
-    "accession_id": "S-BIAD570",
-    "title": "A spatially resolved atlas of the human lung characterizes a gland-associated immune niche",
-    "release_date": "2022-10-24",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD570-example.png",
-    "imaging_type": "confocal fluorescence microscopy",
-    "organism": "Mus musculus (mouse)",
-    "n_images": 109
-  },
-  "S-BIAD573": {
-    "accession_id": "S-BIAD573",
-    "title": "Plasma membrane topography governs the 3D dynamic localization of IgM B cell antigen receptor clusters",
-    "release_date": "2022-12-30",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD573-example.png",
-    "imaging_type": "lattice light sheet microscopy",
-    "organism": "Homo sapiens (human)",
-    "n_images": 41
-  },
-  "S-BIAD582": {
-    "accession_id": "S-BIAD582",
-    "title": "A timer gene network is spatially regulated by the terminal system in the Drosophila embryo",
-    "release_date": "2022-11-01",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD582-example.png",
-    "imaging_type": "confocal fluorescence microscopy",
-    "organism": "Drosophila melanogaster (fruit fly)",
-    "n_images": 4384
-  },
-  "S-BIAD593": {
-    "accession_id": "S-BIAD593",
-    "title": "Bioenergetics of pollen tube growth in Arabidopsis thaliana",
-    "release_date": "2022-12-20",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD593/IM5/IM5-representative-512-512.png",
-    "imaging_type": "confocal fluorescence microscopy",
-    "organism": "Arabidopsis thaliana (thale cress)",
-    "n_images": 80
+  "S-BIAD493": {
+    "accession_id": "S-BIAD493",
+    "title": "A Multi-Spectral Myelin Annotation Tool for Machine Learning Based Myelin Quantification",
+    "release_date": "2022-07-28",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD493-example.png",
+    "imaging_type": "confocal microscopy",
+    "organism": "Mus musculus",
+    "n_images": 25,
+    "image_uuids": [
+      "0ef10250-a8d8-4d25-a005-56576eed933c",
+      "1f84458a-9965-41c3-9bfc-660f8f7ae984",
+      "25376514-21f8-4d8d-b75f-5342b83ae960",
+      "2f6c3823-bd2c-4d60-b0ac-3fa2a25f7ebe",
+      "30b5568b-016d-4cf8-8454-96f6ff2a676a"
+    ],
+    "links": [
+      {
+        "name": "original_submission",
+        "type": "original_submission",
+        "url": "https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD493"
+      }
+    ]
   },
   "S-BIAD599": {
     "accession_id": "S-BIAD599",
@@ -168,114 +29,156 @@
     "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD599/IM49/IM49-representative-512-512.png",
     "imaging_type": "array-scan confocal microscopy",
     "organism": "Danio rerio (zebrafish)",
-    "n_images": 584
+    "n_images": 584,
+    "image_uuids": [
+      "01776a3a-16a5-4c48-a104-fefcc83cc2ee",
+      "01d3f195-c42f-4c47-8b0a-6b5d28f1e822",
+      "01d6dab7-6bcc-4775-8917-7c85b3ad3bad",
+      "01fca2a0-adaa-496d-b20d-5b011b05b38d",
+      "02a8da8e-ac2c-4aa6-93d9-e46fdac0fd7f"
+    ],
+    "links": [
+      {
+        "name": "original_submission",
+        "type": "original_submission",
+        "url": "https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD599"
+      }
+    ]
   },
-  "S-BIAD605": {
-    "accession_id": "S-BIAD605",
-    "title": "Whole slide images and patches of clear cell renal cell carcinoma counterstained with multiple immunofluorescence for Hoechst, CD3, and CD8.",
-    "release_date": "2022-12-25",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD605-example.png",
+  "S-BIAD686": {
+    "accession_id": "S-BIAD686",
+    "title": "Embryonic mice ultrasound volumes with body and brain volume segmentation masks",
+    "release_date": "2023-05-10",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD686-example.png",
+    "imaging_type": "Ultrasound",
+    "organism": "mus musculus (mouse)",
+    "n_images": 693,
+    "image_uuids": [
+      "00810341-96e8-4022-8d6b-21738d9e9fa7",
+      "00b1f816-53bd-42d6-bfa7-ff2212e92640",
+      "01550e0d-70c7-4b5e-ae80-7acc82e96364",
+      "016c9f1c-4f21-498b-98a4-809f59d88414",
+      "0185258c-4720-484e-98ea-bf5ce34e1c12"
+    ],
+    "links": [
+      {
+        "name": "original_submission",
+        "type": "original_submission",
+        "url": "https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD686"
+      }
+    ]
+  },
+  "S-BIAD800": {
+    "accession_id": "S-BIAD800",
+    "title": "Imaging Mass Cytometry of human tonsil sections (OME-NGFF)",
+    "release_date": "2023-07-07",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD800/a0e1b9c0-5c07-4600-b114-7b4697900e39/a0e1b9c0-5c07-4600-b114-7b4697900e39-representative-512-512.png",
+    "imaging_type": "imaging mass cytometry",
+    "organism": "Homo sapiens (human)",
+    "n_images": 3,
+    "image_uuids": [
+      "a0e1b9c0-5c07-4600-b114-7b4697900e39",
+      "e24d29ea-0e39-4368-a2e4-5e6320c91573",
+      "f49ada41-43bf-47ff-99b9-bdf8cc311ce3"
+    ],
+    "links": [
+      {
+        "name": "original_submission",
+        "type": "original_submission",
+        "url": "https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD800"
+      }
+    ]
+  },
+  "S-BIAD815": {
+    "accession_id": "S-BIAD815",
+    "title": "In Toto Cell Tracking using Lightsheet Microscopy of the Neuromesodermal Progenitor Zone of the Zebrafish Tailbud from the 21st Somite Stage (OME-NGFF)",
+    "release_date": "2023-07-12",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD815/51afff7c-eed4-44b4-95c7-1437d8807b97/51afff7c-eed4-44b4-95c7-1437d8807b97-representative-512-512.png",
+    "imaging_type": "SPIM",
+    "organism": "Danio rerio (zebrafish)",
+    "n_images": 5,
+    "image_uuids": [
+      "51afff7c-eed4-44b4-95c7-1437d8807b97",
+      "863bc512-1911-4ba3-838c-8ed044ce656c",
+      "b2633930-86b0-489e-a845-d2a7afe6ff15",
+      "c49efcfd-e767-4ae5-adbf-299cafd92120",
+      "e12a8e2a-4fce-4579-a78b-b0c4597c3ada"
+    ],
+    "links": [
+      {
+        "name": "original_submission",
+        "type": "original_submission",
+        "url": "https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD815"
+      }
+    ]
+  },
+  "S-BIAD952": {
+    "accession_id": "S-BIAD952",
+    "title": "Highlighting the hidden: A tagging strategy for monitoring the association of GABARAP with microtubules in living cells",
+    "release_date": "2023-11-30",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD952/S-BIAD952-representative-512-512.png",
+    "imaging_type": "confocal microscopy",
+    "organism": "Homo sapiens (human)",
+    "n_images": 71,
+    "image_uuids": [
+      "0088b90e-c691-4e30-9730-cecb03f3540a",
+      "0242145a-7c2f-4743-8f76-8885a575d6a8",
+      "04ad1a77-bd90-49f0-8395-724818026175",
+      "07476ef2-446c-4cf1-ac0f-7044114057b7",
+      "0aba993a-123c-41fe-8ce9-bd6a450c271e"
+    ],
+    "links": [
+      {
+        "name": "original_submission",
+        "type": "original_submission",
+        "url": "https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD952"
+      }
+    ]
+  },
+  "S-BIAD1082": {
+    "accession_id": "S-BIAD1082",
+    "title": "Amylopectinosis of the fatal epilepsy Lafora disease resists autophagic glycogen catabolism",
+    "release_date": "2024-03-13",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1082/S-BIAD1082-representative-512-512.png",
+    "imaging_type": "imaging method",
+    "organism": "Mus musculus (mouse)",
+    "n_images": 8,
+    "image_uuids": [
+      "08b0c608-9a08-41d7-a738-e0023c0d0423",
+      "0a940328-0e4e-477b-a929-f690d840ec7b",
+      "38db4631-0814-4520-a645-7761c17ad2cf",
+      "424f38f4-bc38-42c1-8cf6-55f72db94ceb",
+      "aec5e89f-a1b6-4cc9-9daf-5f698a77d72b"
+    ],
+    "links": [
+      {
+        "name": "original_submission",
+        "type": "original_submission",
+        "url": "https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD1082"
+      }
+    ]
+  },
+  "S-BIAD1090": {
+    "accession_id": "S-BIAD1090",
+    "title": "Highly multiplexed immunohistochemistry of nodal B-cell non-Hodgkin lymphomas",
+    "release_date": "2024-03-25",
+    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/S-BIAD1090/S-BIAD1090-representative-512-512.png",
     "imaging_type": "fluorescence microscopy",
     "organism": "Homo sapiens (human)",
-    "n_images": 20
-  },
-  "EMPIAR-10094": {
-    "accession_id": "EMPIAR-10094",
-    "title": "Serial Block Face SEM of HeLa cell pellet with 10 nm pixels and 50 nm slices (benchmark dataset)",
-    "release_date": "2019-05-21",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10094/IM1/IM1-representative-512-512.png",
-    "imaging_type": "Serial Block Face SEM",
-    "organism": "Homo sapiens",
-    "n_images": 1
-  },
-  "EMPIAR-10310": {
-    "accession_id": "EMPIAR-10310",
-    "title": "FIB-SEM of parapodia from Platynereis dumerilii",
-    "release_date": "2020-02-07",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10310/IM1/IM1-representative-512-512.png",
-    "imaging_type": "FIB-SEM",
-    "organism": "Platynereis dumerilii",
-    "n_images": 1
-  },
-  "EMPIAR-10392": {
-    "accession_id": "EMPIAR-10392",
-    "title": "Three-dimensional ultrastructure of Plasmodium falciparum throughout cytokinesis",
-    "release_date": "2020-05-14",
-    "example_image_uri": "https://www.ebi.ac.uk/pdbe/emdb-empiar/entryIcons/10392-l.gif",
-    "imaging_type": "FIB-SEM",
-    "organism": "Plasmodium falciparum",
-    "n_images": 11
-  },
-  "EMPIAR-10442": {
-    "accession_id": "EMPIAR-10442",
-    "title": "170314, Five-day-old Col-0 Arabidopsis thaliana root, phloem pole unloading zone (339-381 um from the root tip)",
-    "release_date": "2020-10-23",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10442/IM1/IM1-representative-512-512.png",
-    "imaging_type": "SB EM",
-    "organism": "Arabidopsis thaliana",
-    "n_images": 1
-  },
-  "EMPIAR-10479": {
-    "accession_id": "EMPIAR-10479",
-    "title": "FIB/SEM sample dataset MCB-CLEM IV Weiner",
-    "release_date": "2020-08-06",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10479/IM1/IM1-representative-512-512.png",
-    "imaging_type": "FIB-SEM",
-    "organism": "Shigella flexneri",
-    "n_images": 1
-  },
-  "EMPIAR-10553": {
-    "accession_id": "EMPIAR-10553",
-    "title": "FIB-SEM of Gemmata obscuriglobus - a species of the Planctomycetes phylum",
-    "release_date": "2021-04-30",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10553/IM1/IM1-representative-512-512.png",
-    "imaging_type": "FIB-SEM",
-    "organism": "Gemmata obscuriglobus",
-    "n_images": 1
-  },
-  "EMPIAR-10819": {
-    "accession_id": "EMPIAR-10819",
-    "title": "Benchmark FIB SEM data of HeLa cells previously imaged by Zeiss LSM900 Airyscan microscopy",
-    "release_date": "2021-10-29",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10819/IM1/IM1-representative-512-512.png",
-    "imaging_type": "FIB-SEM",
-    "organism": "Homo sapiens",
-    "n_images": 1
-  },
-  "EMPIAR-10967": {
-    "accession_id": "EMPIAR-10967",
-    "title": "SBF SEM of Human term placental villi",
-    "release_date": "2022-03-14",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10967/IM1/IM1-representative-512-512.png",
-    "imaging_type": "FIB-SEM",
-    "organism": "Homo sapiens",
-    "n_images": 1
-  },
-  "EMPIAR-10903": {
-    "accession_id": "EMPIAR-10903",
-    "title": "A biological nano-foam: the wall of coniferous bisaccate pollen (data sets)",
-    "release_date": "2022-03-07",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10903/IM2/IM2-representative-512-512.png",
-    "imaging_type": "FIB-SEM",
-    "organism": "pine",
-    "n_images": 2
-  },
-  "EMPIAR-10311": {
-    "accession_id": "EMPIAR-10311",
-    "title": "FIB-SEM of a HeLa cell",
-    "release_date": "2020-02-07",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-10311/IM1/IM1-representative-512-512.png",
-    "imaging_type": "FIB-SEM",
-    "organism": "Homo sapiens",
-    "n_images": 1
-  },
-  "EMPIAR-11380": {
-    "accession_id": "EMPIAR-11380",
-    "title": "Light and electron microscopy continuum-resolution imaging of 3D cell cultures",
-    "release_date": "2023-02-22",
-    "example_image_uri": "https://uk1s3.embassy.ebi.ac.uk/bia-integrator-data/EMPIAR-11380/5aec07ee-df5d-4ea4-ac32-fa55419464d6/5aec07ee-df5d-4ea4-ac32-fa55419464d6-representative-512-512.png",
-    "imaging_type": "FIB-SEM",
-    "organism": "Homo sapiens",
-    "n_images": 5
+    "n_images": 35,
+    "image_uuids": [
+      "00e682d3-dfc4-4986-90e8-b9c6435efd44",
+      "019f421b-f520-4ce3-94f7-b0c6c0b500c1",
+      "0a5996ef-84fb-423f-8e16-7987b1c945ba",
+      "13572748-8253-4eba-aee7-3ca515a0f7dd",
+      "304452cd-7c85-447d-8f1f-69ed66c9ead6"
+    ],
+    "links": [
+      {
+        "name": "original_submission",
+        "type": "original_submission",
+        "url": "https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD1090"
+      }
+    ]
   }
 }

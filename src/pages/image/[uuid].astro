@@ -85,6 +85,7 @@ const tissueY = (1e6 * image.PhysicalSizeY * image.sizeY).toPrecision(2);
                 <h3>Biosample</h3>
             </div>
             <div>
+                <b>Title:</b> {image["biosample_title"]}<br>
                 <b>Organism:</b> Homo sapiens<br>
                 <b>Biological entity: </b> HeLa cells
             </div>
@@ -95,6 +96,7 @@ const tissueY = (1e6 * image.PhysicalSizeY * image.sizeY).toPrecision(2);
                 <h3>Specimen</h3>
             </div>
             <div>
+                <b>Title:</b> {image["specimen_title"]}<br>
                 <b>Sample preparation:</b> Cells were seeded onto 11 mm coverslips placed in wells of a 24-well plate to 65–75% confluency. Inhibitors were added as described, and the cells were labelled with 2 µM pacSph in serum-free DMEM for the indicated times. Subsequently, cells were washed with 1 mL PBS three times at RT. Cells were overlaid with 0.5 mL of cold imaging buffer (20 mM HEPES, 115 mM NaCL, 1.2 mM MgCl2, 1.2 mM glucose and 1.8 mM CaCl2, pH 7.4/NaOH), and UV-irradiated (λ~365 nm) on ice for 5 min. Cells were immediately fixed with pre-cooled MeOH at −20 °C for 20 min. Non-cross-linked lipids were extracted by washing three times with 0.78 mL of CHCl3/MeOH/AcOH (10:55:0.75) (v/v) and twice with PBS. Cells were then incubated with 50 μL of click mixture (1 µL 2 mM Alexa-555-azide, 125 µL 10 mM Cu(I)BF4 in acetonitril and 0.5 mL PBS) for 1 h at room temperature in the dark. Cells were then washed with PBS and incubated with 50 μL of primary α-LAMP1 antibody (1:200 in PBS supplemented with 2% BSA and 0.3% Triton X-100) for 1 h in the dark. Coverslips were briefly washed with PBS and incubated with secondary antibody (α-rabbit conjugated to Alexa Fluor 488, 1:800) for 30 min, washed briefly with PBS, and mounted in ProLong Gold Antifade mounting medium (Cell Signalling, Danvers, MA, USA).<br>
             </div>
             <div></div>
@@ -104,6 +106,7 @@ const tissueY = (1e6 * image.PhysicalSizeY * image.sizeY).toPrecision(2);
                 <h3>Image acquisition</h3>
             </div>
             <div>
+                <b>Title:</b> {image["image_acquisition_title"]}<br>
                 Microscopy images were captured using a confocal laser-scanning microscope (Zeiss LSM800) with a 63 × oil objective
             </div>
             <div></div>

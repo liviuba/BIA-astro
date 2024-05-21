@@ -8,6 +8,10 @@ import aboutImage from '../assets/aboutus.png';
 
 import onlineTutorialImage from '../assets/online_tutorial_image.png';
 import getInTouchImage from '../assets/get_in_touch.png';
+import emailImage from '../assets/email.png';
+import githubImage from '../assets/github.png';
+import xtwitterImage from '../assets/x_twitter.png';
+import youtubeImage from '../assets/youtube.png';
 
 import newsExampleImage from '../assets/news_example.png';
 
@@ -134,16 +138,24 @@ import MenuCard from '../components/MenuCard.astro';
     <section class="vf-grid vf-grid__col-2">
       <div>
         <h3>BioImage Archive democratises access to microscopy data</h3>
-        EMBL-EBI’s BioImage Archive makes it easier to access and analyse biological research data
+        EMBL-EBI’s BioImage Archive makes it easier to access and analyse biological research data...
+
+        <a href="https://www.ebi.ac.uk/about/news/updates-from-data-resources/bioimage-archive-galleries/" class="vf-card__link">
+          Read more 
+      </a>
       </div>
       <div>
+        <a href="galleries" class="logo-img">
         <img class="vf-figure__image" src={newsExampleImage.src} alt="Example news image." loading="lazy">
+        </a>
       </div>
     </section>
     <section class="embl-grid embl-grid--has-centered-content">
       <div></div>
       <div>
+        <a href="https://listserver.ebi.ac.uk/mailman/listinfo/bioimage-archive-announce" class="logo-img">
         <button class="vf-button vf-button--primary" style="border-radius: 10px;">Subscribe to our mailing list</button>
+      </a>
       </div>
     </section>
   </section>
@@ -158,7 +170,21 @@ import MenuCard from '../components/MenuCard.astro';
     </div>
     <div>
       <h2>Stay in touch</h2>
-      <img class="vf-figure__image" src={getInTouchImage.src} alt="Get in touch">
+      <section class="vf-grid | vf-grid__col-3" style="margin-left: 0%; margin-right: 60%;">
+      <div class="column column-block">
+        <a href="mailto:bioimage-archive@ebi.ac.uk" class="logo-img">
+        <img class="vf-figure__image" src={emailImage.src} alt="Email us"></a>
+      </div>
+      <div class="column column-block">
+        <a href="https://github.com/BioImage-Archive" class="logo-img">
+        <img class="vf-figure__image" src={githubImage.src} alt="BIA github repo" ></a>
+      </div>
+      <div class="column column-block">
+        <a href="https://x.com/BioimageA" class="logo-img">
+        <img class="vf-figure__image" src={xtwitterImage.src} alt="BIA Twitter"></a>
+      </div>
+
+    </section>  
     </div>
 
   </section>

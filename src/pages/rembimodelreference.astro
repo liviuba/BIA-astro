@@ -1,26 +1,35 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HelpNavigation from '../components/HelpNavigation.astro';
-// import rembi_types from "../data/rembi_types.yaml";
 import ModelHelpCard from '../components/ModelHelpCard.astro';
+import rembi_types from '../data/rembi_types.yaml';
+
+const rembiModels = rembi_types.models;  // Correctly access the models array
 ---
+
 <BaseLayout pageTitle="REMBI Model Reference">
-  <body>
-    <section class="vf-intro | embl-grid embl-grid--has-centered-content">
-        <div>
-          <HelpNavigation />
-        </div>
-        <div>
-            <h2 class="vf-intro__subheading">"REMBI Model Reference"</h2>
-        </div>
-        <div></div>
-    </section> 
-    <section class="vf-card-container vf-card-container__col-3 | vf-u-background-color-ui--white vf-u-fullbleed" style="--vf-card__image--aspect-ratio: 16 / 9;">
-        <div class="vf-card-container__inner">
-            <!-- Fix the ModelHelpCard first -->
-            <!-- { Object.values(rembi_types).map((rembi_types) => ( <ModelHelpCard type={ rembi_types } /> )) } -->
-        </div>
-    </section>
-  </body>
-</html>
+  <section class="vf-intro | embl-grid embl-grid--has-centered-content">
+    <div>
+      <HelpNavigation />
+    </div>
+    <div>
+      <h2 class="vf-intro__subheading">REMBI Model Reference</h2>
+        <p>
+          As part of wider effort towards FAIR data, submissions to the BioImage Archive should feature REMBI-compliant metadata. Below are the main pieces of information required when making a REMBI submission.
+        </p>
+        <p>
+          If your data requires more information in order to be Findable, Accessible, Interoperable and Reusable, <a href='contactus'>contact us</a> to discuss your use-case.
+        </p>
+        <p><b>REMBI version: {rembi_types.rembi_version} </b></p>
+
+    <div>
+      {rembiModels && rembiModels.length > 0 ? (
+        rembiModels.map((model) => (
+          <ModelHelpCard type={model} />
+        ))
+      ) : (
+        <p>No data available</p>
+      )}
+    </div>
+  </section>
 </BaseLayout>

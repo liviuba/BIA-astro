@@ -6,24 +6,26 @@ const slugify = (text) => {
 ---
 
 <article class="doc-panel medium-12" id={slugify(type.class_name)}>
-  <table>
-    <tr>
+  <table class="vf-table--bordered">
+    <thead class="vf-table__header">
+    <tr class="vf-table__row">  
       <td><h3>{type.class_name}</h3></td>
       <td>{type.description}</td>
     </tr>
+    </thead>
 
     {type.attributes && type.attributes.map((attribute) => (
-      <tr>
-        <td>
+      <tr class="vf-table__row">
+        <td class="vf-table__cell">
           {attribute.name}{attribute.required && '*'}
         </td>
-        <td>
-          <table>
+        <td class="vf-table__cell">
+          <table class="vf-table--fixed">
             <tr>
               <td>Description</td>
               <td>{attribute.description}</td>
             </tr>
-            <tr>
+            <tr> 
               <td>Type</td>
               <td>
                 {attribute.type && attribute.type.name === 'union' ? (
@@ -79,4 +81,5 @@ const slugify = (text) => {
       </tr>
     ))}
   </table>
+  <p></p>
 </article>

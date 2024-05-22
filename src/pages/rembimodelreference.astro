@@ -22,7 +22,6 @@ const rembiModels = rembi_types.models;  // Correctly access the models array
         </p>
         <p><b>REMBI version: {rembi_types.rembi_version} </b></p>
 
-    <div>
       {rembiModels && rembiModels.length > 0 ? (
         rembiModels.map((model) => (
           <ModelHelpCard type={model} />
@@ -31,5 +30,6 @@ const rembiModels = rembi_types.models;  // Correctly access the models array
         <p>No data available</p>
       )}
     </div>
+    <div></div>
   </section>
 </BaseLayout>
